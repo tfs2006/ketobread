@@ -713,11 +713,14 @@ p {
 
 .feature__text {
   font-size: 1rem;
-  color: var(--color-text);
+  color: #3D2914;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 /* ---------- TWO-COLUMN CARDS ---------- */
@@ -1172,7 +1175,7 @@ p {
 }
 
 .section-header__text {
-  color: var(--color-text);
+  color: #3D2914;
   font-size: 1.125rem;
   line-height: 1.8;
 }
