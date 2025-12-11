@@ -484,11 +484,11 @@ p {
 }
 
 .site-footer__brand .logo__brand {
-  color: var(--color-white);
+  color: #ffffff !important;
 }
 
 .site-footer__brand .logo__sub {
-  color: rgba(255, 255, 255, 0.9);
+  color: #ffffff !important;
 }
 
 .site-footer__brand .logo__icon {
@@ -518,7 +518,7 @@ p {
 
 .footer-disclaimer {
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.95);
+  color: #ffffff;
   line-height: 1.7;
   max-width: 800px;
 }
@@ -528,14 +528,14 @@ p {
 }
 
 .footer-disclaimer strong {
-  color: var(--color-white);
-  font-weight: 600;
+  color: #ffffff !important;
+  font-weight: 700;
 }
 
 .site-footer__copyright {
   margin-top: var(--space-md);
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
