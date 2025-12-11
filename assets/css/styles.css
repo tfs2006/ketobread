@@ -82,7 +82,7 @@ body {
   font-family: var(--font-body);
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: #3D2914;
+  color: #8B4513;
   color: var(--color-text);
   background-color: #FDF8F3;
   background-color: var(--color-background);
@@ -185,7 +185,7 @@ p {
 
 /* Dark section with light text */
 .section--dark {
-  background-color: #3D2914;
+  background-color: #8B4513;
 }
 
 .section--dark .section-header__title {
@@ -474,7 +474,7 @@ p {
 
 /* ---------- FOOTER ---------- */
 .site-footer {
-  background-color: #3D2914 !important;
+  background-color: #8B4513 !important;
   color: #ffffff;
   padding: var(--space-2xl) 0 var(--space-lg);
 }
@@ -586,7 +586,7 @@ p {
 
 .hero__description {
   font-size: 1.1875rem;
-  color: #3D2914;
+  color: #8B4513;
   max-width: 650px;
   margin: 0 auto var(--space-xl);
   line-height: 1.8;
@@ -642,22 +642,22 @@ p {
 }
 
 .card__text {
-  color: #3D2914;
+  color: #8B4513;
   margin-bottom: var(--space-md);
   opacity: 1;
 }
 
 .card p {
-  color: #3D2914;
+  color: #8B4513;
 }
 
 .card ul,
 .card ol {
-  color: #3D2914;
+  color: #8B4513;
 }
 
 .card li {
-  color: #3D2914;
+  color: #8B4513;
   margin-bottom: var(--space-sm);
 }
 
@@ -680,7 +680,7 @@ p {
 
 .card--highlight .card__text,
 .card--highlight p {
-  color: #3D2914;
+  color: #8B4513;
 }
 
 /* ---------- FEATURE GRID ---------- */
@@ -754,7 +754,7 @@ p {
 
 .feature__text {
   font-size: 0.9375rem;
-  color: #3D2914;
+  color: #8B4513;
   line-height: 1.6;
   text-align: center;
   width: 100%;
@@ -816,7 +816,7 @@ p {
   padding: var(--space-sm) 0;
   padding-left: var(--space-lg);
   position: relative;
-  color: #3D2914;
+  color: #8B4513;
 }
 
 .pros-cons__list li::before {
@@ -995,7 +995,7 @@ p {
 }
 
 .blog-card__title a {
-  color: #3D2914;
+  color: #8B4513;
 }
 
 .blog-card__title a:hover {
@@ -1071,7 +1071,7 @@ p {
 
 .cta-block .btn--primary {
   background-color: #D4A574;
-  color: #3D2914;
+  color: #8B4513;
 }
 
 .cta-block .btn--primary:hover {
@@ -1214,7 +1214,7 @@ p {
 }
 
 .section-header__text {
-  color: #3D2914;
+  color: #8B4513;
   font-size: 1.125rem;
   line-height: 1.8;
 }
@@ -1305,7 +1305,7 @@ p {
 }
 
 .recipe-card__description p {
-  color: #3D2914;
+  color: #8B4513;
   font-size: 1.0625rem;
   line-height: 1.8;
 }
@@ -1334,7 +1334,7 @@ p {
   padding: var(--space-sm) 0;
   padding-left: var(--space-lg);
   position: relative;
-  color: #3D2914;
+  color: #8B4513;
 }
 
 .recipe-card__ingredients li::before {
@@ -1351,7 +1351,7 @@ p {
 
 .recipe-card__instructions li {
   padding: var(--space-sm) 0;
-  color: #3D2914;
+  color: #8B4513;
   line-height: 1.7;
 }
 
@@ -1374,7 +1374,7 @@ p {
 }
 
 .recipe-card__tips p {
-  color: #3D2914;
+  color: #8B4513;
   margin: 0;
   font-size: 0.9375rem;
   line-height: 1.7;
