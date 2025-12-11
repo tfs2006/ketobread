@@ -673,7 +673,8 @@ p {
   width: 72px;
   height: 72px;
   margin: 0 auto var(--space-lg);
-  background-color: var(--color-accent);
+  background-color: var(--color-background-alt);
+  border: 2px solid var(--color-accent);
   border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -687,12 +688,12 @@ p {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: var(--color-white);
+  color: var(--color-primary);
   font-size: 1.75rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.15);
 }
 
 .feature__title {
