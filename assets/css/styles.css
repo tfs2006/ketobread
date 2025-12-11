@@ -183,6 +183,20 @@ p {
   background-color: var(--color-background-alt);
 }
 
+/* Dark section with light text */
+.section--dark {
+  background-color: #3D2914;
+}
+
+.section--dark .section-header__title {
+  color: #D4A574;
+}
+
+.section--dark .section-header__text {
+  color: #ffffff;
+  font-weight: 500;
+}
+
 /* ---------- BUTTONS ---------- */
 .btn {
   display: inline-block;
