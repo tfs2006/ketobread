@@ -1181,6 +1181,19 @@ p {
   color: #2C1810;
 }
 
+.cta-inline p {
+  color: #1A1412;
+  margin-bottom: var(--space-md);
+}
+
+.cta-inline .btn--primary {
+  background-color: #D4763B;
+  color: #FFFFFF !important;
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: 600;
+}
+
 /* ---------- BREADCRUMB ---------- */
 .breadcrumb {
   font-size: 0.875rem;
