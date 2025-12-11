@@ -1,11 +1,11 @@
 # Robots.txt for Keto Bread by 4OurMedia
-# https://tfs2006.github.io/ketobread/
+# https://ketobread.4ourmedia.com/
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://tfs2006.github.io/ketobread/sitemap.xml
+Sitemap: https://ketobread.4ourmedia.com/sitemap.xml
 
 # Disallow legal/utility pages from indexing
 Disallow: /privacy.html

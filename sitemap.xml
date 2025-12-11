@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://tfs2006.github.io/ketobread/</loc>
+    <loc>https://ketobread.4ourmedia.com/</loc>
     <lastmod>2024-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tfs2006.github.io/ketobread/review.html</loc>
+    <loc>https://ketobread.4ourmedia.com/review.html</loc>
     <lastmod>2024-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://tfs2006.github.io/ketobread/comparison.html</loc>
+    <loc>https://ketobread.4ourmedia.com/comparison.html</loc>
     <lastmod>2024-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tfs2006.github.io/ketobread/blog.html</loc>
+    <loc>https://ketobread.4ourmedia.com/blog.html</loc>
     <lastmod>2024-12-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -28,19 +28,19 @@
   
   <!-- Blog Posts -->
   <url>
-    <loc>https://tfs2006.github.io/ketobread/blog/problem-keto-bread-tastes-like-egg.html</loc>
+    <loc>https://ketobread.4ourmedia.com/blog/problem-keto-bread-tastes-like-egg.html</loc>
     <lastmod>2024-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tfs2006.github.io/ketobread/blog/keto-bread-that-actually-rises.html</loc>
+    <loc>https://ketobread.4ourmedia.com/blog/keto-bread-that-actually-rises.html</loc>
     <lastmod>2024-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tfs2006.github.io/ketobread/blog/lectin-free-bread-basics.html</loc>
+    <loc>https://ketobread.4ourmedia.com/blog/lectin-free-bread-basics.html</loc>
     <lastmod>2024-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -48,13 +48,13 @@
   
   <!-- Info Pages -->
   <url>
-    <loc>https://tfs2006.github.io/ketobread/about.html</loc>
+    <loc>https://ketobread.4ourmedia.com/about.html</loc>
     <lastmod>2024-12-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://tfs2006.github.io/ketobread/contact.html</loc>
+    <loc>https://ketobread.4ourmedia.com/contact.html</loc>
     <lastmod>2024-12-11</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
