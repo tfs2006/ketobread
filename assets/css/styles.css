@@ -224,6 +224,33 @@ p {
   font-weight: 500;
 }
 
+/* Card inside dark section - needs white background with dark text */
+.section--dark .card {
+  background-color: #ffffff;
+}
+
+.section--dark .card__title {
+  color: #3E2723;
+}
+
+.section--dark .card__text,
+.section--dark .card p,
+.section--dark .card li {
+  color: #2D2420;
+}
+
+.section--dark .card strong {
+  color: #3E2723;
+}
+
+.section--dark .card a {
+  color: #D4763B;
+}
+
+.section--dark .card a:hover {
+  color: #C16830;
+}
+
 /* ---------- BUTTONS ---------- */
 .btn {
   display: inline-block;
