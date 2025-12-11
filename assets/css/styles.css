@@ -6,37 +6,33 @@
 /* ---------- CSS CUSTOM PROPERTIES ---------- */
 :root {
   /* 
-   * PREMIUM KETO BREAD COLOR PALETTE
-   * Designed for elegance, readability, trust & conversion
-   * 
-   * Psychology: Warm earth tones = comfort, natural, artisan quality
-   * Gold accents = premium, valuable, exclusive
-   * Strategic CTA = urgency without aggression
+   * CLEAN, HIGH-CONTRAST COLOR PALETTE
+   * Light backgrounds with dark text for maximum readability
    */
   
-  /* Primary Colors - Rich, Sophisticated Earth Tones */
-  --color-primary: #5D4037;        /* Deep espresso brown - premium, grounded */
-  --color-primary-light: #795548;  /* Warm cocoa - friendly, approachable */
-  --color-primary-dark: #3E2723;   /* Dark roast - authoritative, trustworthy */
+  /* Primary Colors - Dark browns for text */
+  --color-primary: #3D2B1F;        /* Dark chocolate brown */
+  --color-primary-light: #5D4037;  /* Medium brown */
+  --color-primary-dark: #2C1810;   /* Very dark brown */
   
-  /* Accent Colors - Warm Gold for Premium Feel */
-  --color-accent: #C9A962;         /* Warm gold - premium, artisan quality */
-  --color-accent-light: #D4B878;   /* Light gold - highlights, subtle luxury */
-  --color-accent-dark: #8B6914;    /* Deep gold - text on light backgrounds */
-  --color-accent-text: #9A7B3A;    /* Gold for text - better contrast */
+  /* Accent Colors - Warm Gold */
+  --color-accent: #B8860B;         /* Dark goldenrod - visible on light bg */
+  --color-accent-light: #D4A84B;   /* Light gold */
+  --color-accent-dark: #8B6914;    /* Deep gold for text */
+  --color-accent-text: #7A5D0A;    /* Gold for text - high contrast */
   
-  /* Background Colors - Soft, Inviting Neutrals */
-  --color-background: #FDFBF7;     /* Warm white - clean, fresh, airy */
-  --color-background-alt: #F7F3ED; /* Soft cream - gentle sections, cozy */
+  /* Background Colors - Light and Clean */
+  --color-background: #FFFFFF;     /* Pure white - clean, bright */
+  --color-background-alt: #FAF8F5; /* Very light cream - subtle sections */
   
-  /* Text Colors - High Contrast for Perfect Readability */
-  --color-text: #2D2420;           /* Near-black brown - excellent readability */
-  --color-text-light: #4A4440;     /* Medium gray-brown - secondary text */
-  --color-text-muted: #6B6560;     /* Muted - captions, disclaimers */
+  /* Text Colors - Dark for Maximum Readability */
+  --color-text: #1A1412;           /* Near black - perfect readability */
+  --color-text-light: #3D352F;     /* Dark gray-brown - secondary text */
+  --color-text-muted: #5C554F;     /* Medium - captions, still readable */
   
   /* Functional Colors */
   --color-white: #ffffff;
-  --color-border: #E8E4DE;         /* Subtle warm border */
+  --color-border: #E5E0DA;         /* Light warm border */
   
   /* CTA Colors - Warm, Inviting Call-to-Action */
   --color-cta: #D4763B;            /* Warm terracotta - friendly urgency */
@@ -44,8 +40,8 @@
   --color-cta-text: #ffffff;       /* White text on CTA */
   
   /* Success/Trust Indicators */
-  --color-success: #6B8E5A;        /* Soft sage green - healthy, natural */
-  --color-highlight: #FFF8E7;      /* Warm highlight - attention without alarm */
+  --color-success: #4A7C3F;        /* Forest green - healthy, natural */
+  --color-highlight: #FFF9E6;      /* Light cream highlight */
   
   /* Typography - Elegant serif like ketobreads.net */
   --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -108,9 +104,9 @@ body {
   font-family: var(--font-body);
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: #2D2420;
+  color: #1A1412;
   color: var(--color-text);
-  background-color: #FDFBF7;
+  background-color: #FFFFFF;
   background-color: var(--color-background);
   min-height: 100vh;
   /* Prevent horizontal scroll on mobile */
@@ -165,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.25;
-  color: #3E2723;
+  color: #2C1810;
   margin-bottom: var(--space-md);
 }
 
@@ -205,42 +201,45 @@ p {
 }
 
 .section--alt {
-  background-color: #F7F3ED;
+  background-color: #FAF8F5;
   background-color: var(--color-background-alt);
 }
 
 /* Dark section with light text - Premium deep brown */
 .section--dark {
-  background-color: #3E2723;
-  background: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
+/* Dark section - lighter brown that's still elegant */
+.section--dark {
+  background-color: #5D4037;
+  background: linear-gradient(135deg, #5D4037 0%, #6D4C41 100%);
 }
 
 .section--dark .section-header__title {
-  color: #C9A962;
+  color: #FFD54F;
 }
 
 .section--dark .section-header__text {
-  color: rgba(255, 255, 255, 0.95);
+  color: #FFFFFF;
   font-weight: 500;
 }
 
-/* Card inside dark section - needs white background with dark text */
+/* Card inside dark section - white background with dark text */
 .section--dark .card {
   background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .section--dark .card__title {
-  color: #3E2723;
+  color: #2C1810;
 }
 
 .section--dark .card__text,
 .section--dark .card p,
 .section--dark .card li {
-  color: #2D2420;
+  color: #1A1412;
 }
 
 .section--dark .card strong {
-  color: #3E2723;
+  color: #2C1810;
 }
 
 .section--dark .card a {
@@ -318,14 +317,14 @@ p {
 /* Gold accent button - Premium feel */
 .btn--accent {
   background-color: #C9A962;
-  color: #3E2723;
+  color: #2C1810;
   border: 2px solid #C9A962;
   font-weight: 700;
 }
 
 .btn--accent:hover {
   background-color: #D4B878;
-  color: #3E2723;
+  color: #2C1810;
 }
 
 .btn--outline {
@@ -530,8 +529,8 @@ p {
 
 /* ---------- FOOTER ---------- */
 .site-footer {
-  background-color: #2D2420 !important;
-  background: linear-gradient(180deg, #3E2723 0%, #2D2420 100%) !important;
+  background-color: #5D4037 !important;
+  background: linear-gradient(180deg, #5D4037 0%, #4E342E 100%) !important;
   color: #ffffff;
   padding: var(--space-2xl) 0 var(--space-lg);
 }
@@ -547,7 +546,7 @@ p {
   flex-direction: column;
   gap: var(--space-lg);
   padding-bottom: var(--space-lg);
-  border-bottom: 1px solid rgba(201, 169, 98, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .site-footer__brand {
@@ -619,11 +618,11 @@ p {
 
 /* ---------- HERO SECTION ---------- */
 .hero {
-  background: linear-gradient(135deg, #FDFBF7 0%, #F7F3ED 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #FAF8F5 100%);
   background-color: var(--color-background);
   padding: var(--space-3xl) 0;
   text-align: center;
-  border-bottom: 3px solid #C9A962;
+  border-bottom: 3px solid #B8860B;
 }
 
 .hero__tagline {
@@ -631,19 +630,19 @@ p {
   font-family: "Dancing Script", cursive;
   font-family: var(--font-accent);
   font-size: 1.25rem;
-  color: #8B6914;
+  color: #7A5D0A;
   margin-bottom: var(--space-md);
   font-weight: 600;
 }
 
 .hero__title {
   margin-bottom: var(--space-lg);
-  color: #3E2723;
+  color: #1A1412;
 }
 
 .hero__description {
   font-size: 1.1875rem;
-  color: #2D2420;
+  color: #1A1412;
   max-width: 650px;
   margin: 0 auto var(--space-xl);
   line-height: 1.8;
@@ -696,31 +695,31 @@ p {
 .card__title {
   font-size: 1.375rem;
   margin-bottom: var(--space-md);
-  color: #3E2723;
+  color: #2C1810;
 }
 
 .card__text {
-  color: #2D2420;
+  color: #1A1412;
   margin-bottom: var(--space-md);
   opacity: 1;
 }
 
 .card p {
-  color: #2D2420;
+  color: #1A1412;
 }
 
 .card ul,
 .card ol {
-  color: #2D2420;
+  color: #1A1412;
 }
 
 .card li {
-  color: #2D2420;
+  color: #1A1412;
   margin-bottom: var(--space-sm);
 }
 
 .card strong {
-  color: #3E2723;
+  color: #2C1810;
 }
 
 .card a {
@@ -739,7 +738,7 @@ p {
 
 .card--highlight .card__text,
 .card--highlight p {
-  color: #2D2420;
+  color: #1A1412;
 }
 
 /* ---------- FEATURE GRID ---------- */
@@ -808,12 +807,12 @@ p {
 .feature__title {
   font-size: 1.25rem;
   margin-bottom: var(--space-sm);
-  color: #3E2723;
+  color: #2C1810;
 }
 
 .feature__text {
   font-size: 0.9375rem;
-  color: #2D2420;
+  color: #1A1412;
   line-height: 1.6;
   text-align: center;
   width: 100%;
@@ -875,7 +874,7 @@ p {
   padding: var(--space-sm) 0;
   padding-left: var(--space-lg);
   position: relative;
-  color: #2D2420;
+  color: #1A1412;
 }
 
 .pros-cons__list li::before {
@@ -923,12 +922,12 @@ p {
 .comparison-table th {
   font-family: var(--font-heading);
   font-weight: 600;
-  background-color: #3E2723;
+  background-color: #5D4037;
   color: #ffffff;
 }
 
 .comparison-table th:first-child {
-  background-color: var(--color-primary-dark);
+  background-color: #4E342E;
 }
 
 .comparison-table tbody tr:last-child td {
@@ -972,7 +971,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #3E2723;
+  color: #2C1810;
 }
 
 .faq__item summary::-webkit-details-marker {
@@ -1001,7 +1000,7 @@ p {
 
 .faq__answer {
   padding: 0 var(--space-lg) var(--space-lg);
-  color: #2D2420;
+  color: #1A1412;
 }
 
 /* ---------- BLOG CARDS ---------- */
@@ -1038,7 +1037,7 @@ p {
 .blog-card__image {
   width: 100%;
   height: 160px;
-  background-color: #F7F3ED;
+  background-color: #FAF8F5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1056,7 +1055,7 @@ p {
 }
 
 .blog-card__title a {
-  color: #3E2723;
+  color: #2C1810;
 }
 
 .blog-card__title a:hover {
@@ -1064,7 +1063,7 @@ p {
 }
 
 .blog-card__excerpt {
-  color: #4A4440;
+  color: #3D352F;
   font-size: 0.95rem;
   margin-bottom: var(--space-md);
 }
@@ -1089,7 +1088,7 @@ p {
 
 .article__meta {
   font-size: 0.875rem;
-  color: #4A4440;
+  color: #3D352F;
   margin-bottom: var(--space-md);
 }
 
@@ -1113,8 +1112,8 @@ p {
 
 /* ---------- CTA BLOCKS ---------- */
 .cta-block {
-  background-color: #3E2723;
-  background: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
+  background-color: #5D4037;
+  background: linear-gradient(135deg, #5D4037 0%, #6D4C41 100%);
   color: #ffffff;
   padding: var(--space-xl);
   border-radius: var(--radius-lg);
@@ -1123,12 +1122,12 @@ p {
 }
 
 .cta-block__title {
-  color: #C9A962;
+  color: #FFD54F;
   margin-bottom: var(--space-md);
 }
 
 .cta-block__text {
-  color: rgba(255, 255, 255, 0.9);
+  color: #FFFFFF;
   margin-bottom: var(--space-lg);
 }
 
@@ -1154,7 +1153,7 @@ p {
 .cta-inline__title {
   font-size: 1.125rem;
   margin-bottom: var(--space-sm);
-  color: #3E2723;
+  color: #2C1810;
 }
 
 /* ---------- BREADCRUMB ---------- */
@@ -1275,11 +1274,11 @@ p {
 
 .section-header__title {
   margin-bottom: var(--space-md);
-  color: #3E2723;
+  color: #2C1810;
 }
 
 .section-header__text {
-  color: #2D2420;
+  color: #1A1412;
   font-size: 1.125rem;
   line-height: 1.8;
 }
@@ -1292,11 +1291,11 @@ p {
   box-shadow: var(--shadow-lg);
   max-width: 800px;
   margin: 0 auto;
-  border: 1px solid #E8E4DE;
+  border: 1px solid #E5E0DA;
 }
 
 .recipe-card__header {
-  background: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
+  background: linear-gradient(135deg, #5D4037 0%, #6D4C41 100%);
   color: var(--color-white);
   padding: var(--space-xl);
   text-align: center;
@@ -1307,8 +1306,8 @@ p {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background-color: #C9A962;
-  color: #3E2723;
+  background-color: #FFD54F;
+  color: #3D2B1F;
   border-radius: 50%;
   font-family: var(--font-heading);
   font-size: 1.5rem;
@@ -1363,7 +1362,7 @@ p {
 .recipe-info__value {
   font-family: var(--font-heading);
   font-weight: 600;
-  color: #3E2723;
+  color: #2C1810;
 }
 
 .recipe-card__description {
@@ -1371,7 +1370,7 @@ p {
 }
 
 .recipe-card__description p {
-  color: #2D2420;
+  color: #1A1412;
   font-size: 1.0625rem;
   line-height: 1.8;
 }
@@ -1383,7 +1382,7 @@ p {
 
 .recipe-card__ingredients h3,
 .recipe-card__instructions h3 {
-  color: #3E2723;
+  color: #2C1810;
   font-size: 1.25rem;
   margin-bottom: var(--space-md);
   padding-bottom: var(--space-sm);
@@ -1400,7 +1399,7 @@ p {
   padding: var(--space-sm) 0;
   padding-left: var(--space-lg);
   position: relative;
-  color: #2D2420;
+  color: #1A1412;
 }
 
 .recipe-card__ingredients li::before {
@@ -1417,7 +1416,7 @@ p {
 
 .recipe-card__instructions li {
   padding: var(--space-sm) 0;
-  color: #2D2420;
+  color: #1A1412;
   line-height: 1.7;
 }
 
@@ -1434,13 +1433,13 @@ p {
 }
 
 .recipe-card__tips h4 {
-  color: #3E2723;
+  color: #2C1810;
   margin-bottom: var(--space-sm);
   font-size: 1rem;
 }
 
 .recipe-card__tips p {
-  color: #2D2420;
+  color: #1A1412;
   margin: 0;
   font-size: 0.9375rem;
   line-height: 1.7;
