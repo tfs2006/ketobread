@@ -5,22 +5,46 @@
 
 /* ---------- CSS CUSTOM PROPERTIES ---------- */
 :root {
-  /* Colors - Matching ketobreads.net warm bakery theme */
-  --color-primary: #8B4513;        /* Saddle brown - warm bread color */
-  --color-primary-light: #A0522D;  /* Sienna */
-  --color-primary-dark: #654321;   /* Dark brown */
-  --color-accent: #D4A574;         /* Warm tan/wheat color */
-  --color-accent-light: #DEB887;   /* Burlywood */
-  --color-accent-dark: #CD853F;    /* Peru */
-  --color-background: #FDF8F3;     /* Warm cream/off-white */
-  --color-background-alt: #F5EDE4; /* Slightly darker cream */
-  --color-text: #3D2914;           /* Dark brown text */
-  --color-text-light: #6B5344;     /* Medium brown */
+  /* 
+   * PREMIUM KETO BREAD COLOR PALETTE
+   * Designed for elegance, readability, trust & conversion
+   * 
+   * Psychology: Warm earth tones = comfort, natural, artisan quality
+   * Gold accents = premium, valuable, exclusive
+   * Strategic CTA = urgency without aggression
+   */
+  
+  /* Primary Colors - Rich, Sophisticated Earth Tones */
+  --color-primary: #5D4037;        /* Deep espresso brown - premium, grounded */
+  --color-primary-light: #795548;  /* Warm cocoa - friendly, approachable */
+  --color-primary-dark: #3E2723;   /* Dark roast - authoritative, trustworthy */
+  
+  /* Accent Colors - Warm Gold for Premium Feel */
+  --color-accent: #C9A962;         /* Warm gold - premium, artisan quality */
+  --color-accent-light: #D4B878;   /* Light gold - highlights, subtle luxury */
+  --color-accent-dark: #B8963B;    /* Deep gold - rich, valuable feel */
+  
+  /* Background Colors - Soft, Inviting Neutrals */
+  --color-background: #FDFBF7;     /* Warm white - clean, fresh, airy */
+  --color-background-alt: #F7F3ED; /* Soft cream - gentle sections, cozy */
+  
+  /* Text Colors - High Contrast for Perfect Readability */
+  --color-text: #2D2420;           /* Near-black brown - excellent readability */
+  --color-text-light: #5D5550;     /* Medium gray-brown - secondary text */
+  --color-text-muted: #8A8480;     /* Muted - captions, disclaimers */
+  
+  /* Functional Colors */
   --color-white: #ffffff;
-  --color-border: #E8DED3;         /* Warm border */
-  --color-cta: #C41E3A;            /* Red CTA button like ketobreads.net */
-  --color-cta-hover: #A01830;      /* Darker red on hover */
-  --color-gold: #B8860B;           /* Dark goldenrod for accents */
+  --color-border: #E8E4DE;         /* Subtle warm border */
+  
+  /* CTA Colors - Warm, Inviting Call-to-Action */
+  --color-cta: #D4763B;            /* Warm terracotta - friendly urgency */
+  --color-cta-hover: #C16830;      /* Deeper terracotta on hover */
+  --color-cta-text: #ffffff;       /* White text on CTA */
+  
+  /* Success/Trust Indicators */
+  --color-success: #6B8E5A;        /* Soft sage green - healthy, natural */
+  --color-highlight: #FFF8E7;      /* Warm highlight - attention without alarm */
   
   /* Typography - Elegant serif like ketobreads.net */
   --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -42,10 +66,11 @@
   --radius-lg: 12px;
   --radius-xl: 16px;
   
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(61, 41, 20, 0.1);
-  --shadow-md: 0 4px 6px rgba(61, 41, 20, 0.12);
-  --shadow-lg: 0 10px 25px rgba(61, 41, 20, 0.15);
+  /* Shadows - Soft, elegant depth */
+  --shadow-sm: 0 1px 3px rgba(45, 36, 32, 0.08);
+  --shadow-md: 0 4px 12px rgba(45, 36, 32, 0.1);
+  --shadow-lg: 0 12px 32px rgba(45, 36, 32, 0.14);
+  --shadow-gold: 0 4px 20px rgba(201, 169, 98, 0.25);
   
   /* Transitions */
   --transition-fast: 0.15s ease;
@@ -82,9 +107,9 @@ body {
   font-family: var(--font-body);
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: #8B4513;
+  color: #2D2420;
   color: var(--color-text);
-  background-color: #FDF8F3;
+  background-color: #FDFBF7;
   background-color: var(--color-background);
   min-height: 100vh;
   /* Prevent horizontal scroll on mobile */
@@ -114,18 +139,18 @@ textarea {
 }
 
 a {
-  color: #8B4513;
+  color: #5D4037;
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 a:hover {
-  color: #C41E3A;
+  color: #D4763B;
   text-decoration: underline;
 }
 
 a:focus {
-  outline: 2px solid #D4A574;
+  outline: 2px solid #C9A962;
   outline-offset: 2px;
 }
 
@@ -139,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.25;
-  color: #8B4513;
+  color: #3E2723;
   margin-bottom: var(--space-md);
 }
 
@@ -179,21 +204,22 @@ p {
 }
 
 .section--alt {
-  background-color: #F5EDE4;
+  background-color: #F7F3ED;
   background-color: var(--color-background-alt);
 }
 
-/* Dark section with light text */
+/* Dark section with light text - Premium deep brown */
 .section--dark {
-  background-color: #8B4513;
+  background-color: #3E2723;
+  background: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
 }
 
 .section--dark .section-header__title {
-  color: #D4A574;
+  color: #C9A962;
 }
 
 .section--dark .section-header__text {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.95);
   font-weight: 500;
 }
 
@@ -230,29 +256,30 @@ p {
 }
 
 .btn:focus {
-  outline: 2px solid #D4A574;
+  outline: 2px solid #C9A962;
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 
-/* Red CTA button like ketobreads.net */
+/* Primary CTA button - Warm terracotta for friendly urgency */
 .btn--primary {
-  background-color: #C41E3A;
+  background-color: #D4763B;
   background-color: var(--color-cta);
   color: #ffffff;
   color: var(--color-white);
-  -webkit-box-shadow: 0 4px 15px rgba(196, 30, 58, 0.35);
-  box-shadow: 0 4px 15px rgba(196, 30, 58, 0.35);
+  -webkit-box-shadow: 0 4px 16px rgba(212, 118, 59, 0.35);
+  box-shadow: 0 4px 16px rgba(212, 118, 59, 0.35);
   font-size: 1.125rem;
+  border: none;
 }
 
 .btn--primary:hover {
-  background-color: #A01830;
+  background-color: #C16830;
   background-color: var(--color-cta-hover);
   color: #ffffff;
   color: var(--color-white);
-  -webkit-box-shadow: 0 6px 20px rgba(196, 30, 58, 0.45);
-  box-shadow: 0 6px 20px rgba(196, 30, 58, 0.45);
+  -webkit-box-shadow: 0 6px 24px rgba(212, 118, 59, 0.45);
+  box-shadow: 0 6px 24px rgba(212, 118, 59, 0.45);
   -webkit-transform: translateY(-2px);
   -moz-transform: translateY(-2px);
   -ms-transform: translateY(-2px);
@@ -260,26 +287,27 @@ p {
   transform: translateY(-2px);
 }
 
-/* Warm brown accent button */
+/* Gold accent button - Premium feel */
 .btn--accent {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border: 2px solid var(--color-primary);
+  background-color: #C9A962;
+  color: #3E2723;
+  border: 2px solid #C9A962;
+  font-weight: 700;
 }
 
 .btn--accent:hover {
-  background-color: var(--color-primary-light);
-  color: var(--color-white);
+  background-color: #D4B878;
+  color: #3E2723;
 }
 
 .btn--outline {
   background-color: transparent;
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  color: #5D4037;
+  border: 2px solid #5D4037;
 }
 
 .btn--outline:hover {
-  background-color: var(--color-primary);
+  background-color: #5D4037;
   color: var(--color-white);
 }
 
@@ -474,7 +502,8 @@ p {
 
 /* ---------- FOOTER ---------- */
 .site-footer {
-  background-color: #8B4513 !important;
+  background-color: #2D2420 !important;
+  background: linear-gradient(180deg, #3E2723 0%, #2D2420 100%) !important;
   color: #ffffff;
   padding: var(--space-2xl) 0 var(--space-lg);
 }
@@ -490,7 +519,7 @@ p {
   flex-direction: column;
   gap: var(--space-lg);
   padding-bottom: var(--space-lg);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(201, 169, 98, 0.3);
 }
 
 .site-footer__brand {
@@ -498,15 +527,15 @@ p {
 }
 
 .site-footer__brand .logo__brand {
-  color: #ffffff !important;
+  color: #C9A962 !important;
 }
 
 .site-footer__brand .logo__sub {
-  color: #ffffff !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .site-footer__brand .logo__icon {
-  background-color: var(--color-accent);
+  background-color: #C9A962;
 }
 
 .footer-nav__list {
@@ -523,7 +552,7 @@ p {
 }
 
 .footer-nav__link:hover {
-  color: var(--color-accent);
+  color: #C9A962;
 }
 
 .site-footer__bottom {
@@ -532,7 +561,7 @@ p {
 
 .footer-disclaimer {
   font-size: 0.875rem;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.7;
   max-width: 800px;
 }
@@ -542,14 +571,14 @@ p {
 }
 
 .footer-disclaimer strong {
-  color: #ffffff !important;
+  color: #C9A962 !important;
   font-weight: 700;
 }
 
 .site-footer__copyright {
   margin-top: var(--space-md);
   font-size: 0.875rem;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media (min-width: 768px) {
@@ -562,11 +591,11 @@ p {
 
 /* ---------- HERO SECTION ---------- */
 .hero {
-  background: linear-gradient(135deg, #FDF8F3 0%, #F5EDE4 100%);
+  background: linear-gradient(135deg, #FDFBF7 0%, #F7F3ED 100%);
   background-color: var(--color-background);
   padding: var(--space-3xl) 0;
   text-align: center;
-  border-bottom: 3px solid var(--color-accent);
+  border-bottom: 3px solid #C9A962;
 }
 
 .hero__tagline {
@@ -574,19 +603,19 @@ p {
   font-family: "Dancing Script", cursive;
   font-family: var(--font-accent);
   font-size: 1.25rem;
-  color: #8B4513;
+  color: #C9A962;
   margin-bottom: var(--space-md);
   font-weight: 600;
 }
 
 .hero__title {
   margin-bottom: var(--space-lg);
-  color: #8B4513;
+  color: #3E2723;
 }
 
 .hero__description {
   font-size: 1.1875rem;
-  color: #8B4513;
+  color: #2D2420;
   max-width: 650px;
   margin: 0 auto var(--space-xl);
   line-height: 1.8;
@@ -623,64 +652,66 @@ p {
 /* ---------- CARDS ---------- */
 .card {
   background-color: var(--color-white);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   padding: var(--space-xl);
   box-shadow: var(--shadow-md);
   transition: box-shadow var(--transition-normal), transform var(--transition-normal);
-  border: 1px solid var(--color-border);
+  border: 1px solid #E8E4DE;
 }
 
 .card:hover {
   box-shadow: var(--shadow-lg);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  border-color: #C9A962;
 }
 
 .card__title {
   font-size: 1.375rem;
   margin-bottom: var(--space-md);
-  color: #8B4513;
+  color: #3E2723;
 }
 
 .card__text {
-  color: #8B4513;
+  color: #2D2420;
   margin-bottom: var(--space-md);
   opacity: 1;
 }
 
 .card p {
-  color: #8B4513;
+  color: #2D2420;
 }
 
 .card ul,
 .card ol {
-  color: #8B4513;
+  color: #2D2420;
 }
 
 .card li {
-  color: #8B4513;
+  color: #2D2420;
   margin-bottom: var(--space-sm);
 }
 
 .card strong {
-  color: #8B4513;
+  color: #3E2723;
 }
 
 .card a {
-  color: #8B4513;
+  color: #5D4037;
 }
 
 .card a:hover {
-  color: #C41E3A;
+  color: #D4763B;
 }
 
 .card--highlight {
   background: var(--color-white);
-  border: 2px solid var(--color-accent);
+  border: 2px solid #C9A962;
+  box-shadow: var(--shadow-gold);
 }
 
 .card--highlight .card__text,
 .card--highlight p {
-  color: #8B4513;
+  color: #2D2420;
 }
 
 /* ---------- FEATURE GRID ---------- */
@@ -723,8 +754,8 @@ p {
   width: 72px;
   height: 72px;
   margin: 0 auto var(--space-lg);
-  background-color: var(--color-background-alt);
-  border: 2px solid var(--color-accent);
+  background-color: #FFF8E7;
+  border: 2px solid #C9A962;
   border-radius: 50%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -738,23 +769,23 @@ p {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: var(--color-primary);
+  color: #5D4037;
   font-size: 1.75rem;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.15);
+  box-shadow: 0 4px 12px rgba(201, 169, 98, 0.2);
 }
 
 .feature__title {
   font-size: 1.25rem;
   margin-bottom: var(--space-sm);
-  color: #8B4513;
+  color: #3E2723;
 }
 
 .feature__text {
   font-size: 0.9375rem;
-  color: #8B4513;
+  color: #2D2420;
   line-height: 1.6;
   text-align: center;
   width: 100%;
@@ -801,11 +832,11 @@ p {
 }
 
 .pros-cons__title--pros {
-  color: #8B4513;
+  color: #6B8E5A;
 }
 
 .pros-cons__title--cons {
-  color: #b94a48;
+  color: #C67D7D;
 }
 
 .pros-cons__list {
@@ -816,7 +847,7 @@ p {
   padding: var(--space-sm) 0;
   padding-left: var(--space-lg);
   position: relative;
-  color: #8B4513;
+  color: #2D2420;
 }
 
 .pros-cons__list li::before {
@@ -831,11 +862,11 @@ p {
 }
 
 .pros-cons__column--pros li::before {
-  background-color: #8B4513;
+  background-color: #6B8E5A;
 }
 
 .pros-cons__column--cons li::before {
-  background-color: #b94a48;
+  background-color: #C67D7D;
 }
 
 /* ---------- COMPARISON TABLE ---------- */
@@ -864,7 +895,7 @@ p {
 .comparison-table th {
   font-family: var(--font-heading);
   font-weight: 600;
-  background-color: #8B4513;
+  background-color: #3E2723;
   color: #ffffff;
 }
 
@@ -886,7 +917,7 @@ p {
 }
 
 .comparison-table .highlight {
-  background-color: rgba(224, 161, 45, 0.1);
+  background-color: #FFF8E7;
   font-weight: 600;
 }
 
@@ -901,6 +932,7 @@ p {
   margin-bottom: var(--space-md);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
+  border: 1px solid #E8E4DE;
 }
 
 .faq__item summary {
@@ -912,6 +944,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #3E2723;
 }
 
 .faq__item summary::-webkit-details-marker {
@@ -921,7 +954,7 @@ p {
 .faq__item summary::after {
   content: '+';
   font-size: 1.5rem;
-  color: #8B4513;
+  color: #C9A962;
   transition: transform var(--transition-fast);
 }
 
@@ -930,7 +963,7 @@ p {
 }
 
 .faq__item summary:hover {
-  background-color: var(--color-background);
+  background-color: #FFF8E7;
 }
 
 .faq__item summary:focus {
@@ -940,7 +973,7 @@ p {
 
 .faq__answer {
   padding: 0 var(--space-lg) var(--space-lg);
-  color: #5D4037;
+  color: #2D2420;
 }
 
 /* ---------- BLOG CARDS ---------- */
@@ -977,11 +1010,11 @@ p {
 .blog-card__image {
   width: 100%;
   height: 160px;
-  background-color: #F5EDE4;
+  background-color: #F7F3ED;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8B4513;
+  color: #5D4037;
   font-size: 3rem;
 }
 
@@ -995,15 +1028,15 @@ p {
 }
 
 .blog-card__title a {
-  color: #8B4513;
+  color: #3E2723;
 }
 
 .blog-card__title a:hover {
-  color: #8B4513;
+  color: #D4763B;
 }
 
 .blog-card__excerpt {
-  color: #5D4037;
+  color: #5D5550;
   font-size: 0.95rem;
   margin-bottom: var(--space-md);
 }
@@ -1012,6 +1045,7 @@ p {
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 0.9rem;
+  color: #D4763B;
 }
 
 /* ---------- ARTICLE CONTENT ---------- */
@@ -1027,7 +1061,7 @@ p {
 
 .article__meta {
   font-size: 0.875rem;
-  color: #5D4037;
+  color: #5D5550;
   margin-bottom: var(--space-md);
 }
 
@@ -1051,7 +1085,8 @@ p {
 
 /* ---------- CTA BLOCKS ---------- */
 .cta-block {
-  background-color: #8B4513;
+  background-color: #3E2723;
+  background: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
   color: #ffffff;
   padding: var(--space-xl);
   border-radius: var(--radius-lg);
@@ -1060,7 +1095,7 @@ p {
 }
 
 .cta-block__title {
-  color: #ffffff;
+  color: #C9A962;
   margin-bottom: var(--space-md);
 }
 
@@ -1070,26 +1105,28 @@ p {
 }
 
 .cta-block .btn--primary {
-  background-color: #D4A574;
-  color: #8B4513;
+  background-color: #D4763B;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(212, 118, 59, 0.4);
 }
 
 .cta-block .btn--primary:hover {
-  background-color: #DEB887;
+  background-color: #C16830;
 }
 
 /* Inline CTA */
 .cta-inline {
-  background-color: var(--color-background);
+  background-color: #FFF8E7;
   padding: var(--space-lg);
   border-radius: var(--radius-md);
-  border-left: 4px solid var(--color-accent);
+  border-left: 4px solid #C9A962;
   margin: var(--space-lg) 0;
 }
 
 .cta-inline__title {
   font-size: 1.125rem;
   margin-bottom: var(--space-sm);
+  color: #3E2723;
 }
 
 /* ---------- BREADCRUMB ---------- */
@@ -1210,11 +1247,11 @@ p {
 
 .section-header__title {
   margin-bottom: var(--space-md);
-  color: #8B4513;
+  color: #3E2723;
 }
 
 .section-header__text {
-  color: #8B4513;
+  color: #2D2420;
   font-size: 1.125rem;
   line-height: 1.8;
 }
@@ -1224,13 +1261,14 @@ p {
   background-color: var(--color-white);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
   max-width: 800px;
   margin: 0 auto;
+  border: 1px solid #E8E4DE;
 }
 
 .recipe-card__header {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  background: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
   color: var(--color-white);
   padding: var(--space-xl);
   text-align: center;
@@ -1241,8 +1279,8 @@ p {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background-color: var(--color-accent);
-  color: var(--color-primary-dark);
+  background-color: #C9A962;
+  color: #3E2723;
   border-radius: 50%;
   font-family: var(--font-heading);
   font-size: 1.5rem;
@@ -1258,7 +1296,7 @@ p {
 }
 
 .recipe-card__tagline {
-  color: var(--color-accent-light);
+  color: #D4B878;
   font-family: var(--font-accent);
   font-size: 1.125rem;
   margin: 0;
@@ -1281,14 +1319,14 @@ p {
 .recipe-info {
   text-align: center;
   padding: var(--space-sm) var(--space-md);
-  background-color: var(--color-background-alt);
+  background-color: #FFF8E7;
   border-radius: var(--radius-md);
 }
 
 .recipe-info__label {
   display: block;
   font-size: 0.75rem;
-  color: #5D4037;
+  color: #5D5550;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 2px;
@@ -1297,7 +1335,7 @@ p {
 .recipe-info__value {
   font-family: var(--font-heading);
   font-weight: 600;
-  color: #8B4513;
+  color: #3E2723;
 }
 
 .recipe-card__description {
@@ -1305,7 +1343,7 @@ p {
 }
 
 .recipe-card__description p {
-  color: #8B4513;
+  color: #2D2420;
   font-size: 1.0625rem;
   line-height: 1.8;
 }
@@ -1317,11 +1355,11 @@ p {
 
 .recipe-card__ingredients h3,
 .recipe-card__instructions h3 {
-  color: #8B4513;
+  color: #3E2723;
   font-size: 1.25rem;
   margin-bottom: var(--space-md);
   padding-bottom: var(--space-sm);
-  border-bottom: 2px solid #D4A574;
+  border-bottom: 2px solid #C9A962;
   display: inline-block;
 }
 
@@ -1334,12 +1372,12 @@ p {
   padding: var(--space-sm) 0;
   padding-left: var(--space-lg);
   position: relative;
-  color: #8B4513;
+  color: #2D2420;
 }
 
 .recipe-card__ingredients li::before {
   content: "•";
-  color: #D4A574;
+  color: #C9A962;
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -1351,30 +1389,30 @@ p {
 
 .recipe-card__instructions li {
   padding: var(--space-sm) 0;
-  color: #8B4513;
+  color: #2D2420;
   line-height: 1.7;
 }
 
 .recipe-card__instructions li::marker {
-  color: #8B4513;
+  color: #5D4037;
   font-weight: 600;
 }
 
 .recipe-card__tips {
-  background-color: #F5EDE4;
+  background-color: #FFF8E7;
   padding: var(--space-lg);
   border-radius: var(--radius-md);
-  border-left: 4px solid #D4A574;
+  border-left: 4px solid #C9A962;
 }
 
 .recipe-card__tips h4 {
-  color: #8B4513;
+  color: #3E2723;
   margin-bottom: var(--space-sm);
   font-size: 1rem;
 }
 
 .recipe-card__tips p {
-  color: #8B4513;
+  color: #2D2420;
   margin: 0;
   font-size: 0.9375rem;
   line-height: 1.7;
