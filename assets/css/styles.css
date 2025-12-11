@@ -664,7 +664,9 @@ p {
 /* ---------- FEATURE GRID ---------- */
 .features {
   display: grid;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 @media (min-width: 640px) {
@@ -676,7 +678,7 @@ p {
 
 .feature {
   text-align: center;
-  padding: var(--space-lg);
+  padding: var(--space-md);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -690,6 +692,9 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .feature__icon {
@@ -726,15 +731,12 @@ p {
 }
 
 .feature__text {
-  font-size: 1rem;
+  font-size: 0.9375rem;
   color: #3D2914;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  line-height: 1.6;
   text-align: center;
-  max-width: 280px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 var(--space-sm);
 }
 
 /* ---------- TWO-COLUMN CARDS ---------- */
