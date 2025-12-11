@@ -1078,24 +1078,41 @@ p {
   max-width: 800px;
   margin: 0 auto;
   padding: var(--space-2xl) var(--space-md);
+  background-color: #FFFFFF;
 }
 
 .article__header {
   margin-bottom: var(--space-xl);
 }
 
+.article__header h1 {
+  color: #2C1810;
+}
+
 .article__meta {
   font-size: 0.875rem;
-  color: #3D352F;
+  color: #5D4037;
+  margin-bottom: var(--space-md);
+}
+
+.article__content {
+  color: #1A1412;
+}
+
+.article__content p {
+  color: #1A1412;
+  line-height: 1.8;
   margin-bottom: var(--space-md);
 }
 
 .article__content h2 {
   margin-top: var(--space-xl);
+  color: #2C1810;
 }
 
 .article__content h3 {
   margin-top: var(--space-lg);
+  color: #3D2B1F;
 }
 
 .article__content ul,
@@ -1106,6 +1123,16 @@ p {
 
 .article__content li {
   margin-bottom: var(--space-sm);
+  color: #1A1412;
+}
+
+.article__content a {
+  color: #D4763B;
+  text-decoration: underline;
+}
+
+.article__content a:hover {
+  color: #C16830;
 }
 
 /* ---------- CTA BLOCKS ---------- */
