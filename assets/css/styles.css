@@ -53,6 +53,8 @@
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -61,21 +63,47 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* Safe area insets for notched devices */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
+/* Fallback for browsers that don't support CSS custom properties */
 body {
+  font-family: Georgia, "Times New Roman", serif;
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.7;
+  color: #222222;
   color: var(--color-text);
+  background-color: #FAF7F0;
   background-color: var(--color-background);
   min-height: 100vh;
+  /* Prevent horizontal scroll on mobile */
+  overflow-x: hidden;
+  /* Improve font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
+  /* Prevent image dragging */
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Improve touch targets on mobile */
+button,
+a,
+input,
+select,
+textarea {
+  touch-action: manipulation;
 }
 
 a {
@@ -125,49 +153,80 @@ p {
 /* ---------- LAYOUT UTILITIES ---------- */
 .container {
   width: 100%;
+  max-width: 1200px;
   max-width: var(--container-max);
   margin: 0 auto;
+  padding: 0 16px;
   padding: 0 var(--space-md);
 }
 
 .section {
+  padding: 48px 0;
   padding: var(--space-2xl) 0;
 }
 
 .section--alt {
+  background-color: #ffffff;
   background-color: var(--color-white);
 }
 
 /* ---------- BUTTONS ---------- */
 .btn {
   display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-family: var(--font-heading);
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
+  padding: 16px 24px;
   padding: var(--space-md) var(--space-lg);
   border: none;
+  border-radius: 8px;
   border-radius: var(--radius-md);
   cursor: pointer;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
   transition: all var(--transition-fast);
+  /* Prevent text selection on buttons */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Remove tap highlight on mobile */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn:focus {
+  outline: 2px solid #E0A12D;
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 
 .btn--primary {
+  background-color: #184A2C;
   background-color: var(--color-primary);
+  color: #ffffff;
   color: var(--color-white);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   box-shadow: var(--shadow-sm);
 }
 
 .btn--primary:hover {
+  background-color: #1f5c38;
   background-color: var(--color-primary-light);
+  color: #ffffff;
   color: var(--color-white);
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   box-shadow: var(--shadow-md);
+  -webkit-transform: translateY(-1px);
+  -moz-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  -o-transform: translateY(-1px);
   transform: translateY(-1px);
 }
 
@@ -1056,5 +1115,318 @@ p {
   body {
     background: white;
     color: black;
+  }
+}
+
+/* ============================================
+   CROSS-BROWSER & DEVICE COMPATIBILITY
+   ============================================ */
+
+/* ---------- FLEXBOX FALLBACKS ---------- */
+.features {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.hero__actions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.site-header__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* ---------- GRID FALLBACKS ---------- */
+@supports not (display: grid) {
+  .features--cols-3,
+  .card-grid--cols-2,
+  .blog-grid,
+  .pros-cons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .features--cols-3 > * {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.333%;
+    -ms-flex: 0 0 33.333%;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+  
+  .card-grid--cols-2 > *,
+  .pros-cons > * {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* ---------- TOUCH DEVICE OPTIMIZATIONS ---------- */
+@media (hover: none) and (pointer: coarse) {
+  /* Increase touch targets */
+  .btn {
+    min-height: 48px;
+    min-width: 48px;
+  }
+  
+  .main-nav__link {
+    min-height: 44px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  /* Remove hover effects that don't work well on touch */
+  .btn--primary:hover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  
+  .card:hover {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* ---------- HIGH CONTRAST MODE ---------- */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #0a3d1f;
+    --color-text: #000000;
+    --color-text-light: #333333;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn {
+    border: 2px solid currentColor;
+  }
+}
+
+/* ---------- REDUCED MOTION ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+    -o-transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- DARK MODE SUPPORT ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #1a1a1a;
+    --color-text: #f0f0f0;
+    --color-text-light: #cccccc;
+    --color-white: #2a2a2a;
+    --color-border: #404040;
+    --color-primary-light: #2a7a4a;
+  }
+  
+  .site-header {
+    background-color: #2a2a2a;
+  }
+  
+  .logo__brand {
+    color: #f0f0f0;
+  }
+  
+  .main-nav__link {
+    color: #f0f0f0;
+  }
+  
+  .card,
+  .blog-card,
+  .faq__item,
+  .pros-cons__column {
+    background-color: #2a2a2a;
+    border: 1px solid #404040;
+  }
+  
+  .comparison-table {
+    background-color: #2a2a2a;
+  }
+  
+  .comparison-table th {
+    background-color: #184A2C;
+  }
+  
+  .comparison-table th:first-child {
+    background-color: #123621;
+  }
+}
+
+/* ---------- EXTRA SMALL DEVICES (< 375px) ---------- */
+@media (max-width: 374px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 12px;
+  }
+  
+  .hero__title {
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .logo__brand {
+    font-size: 1rem;
+  }
+  
+  .logo__sub {
+    font-size: 0.6rem;
+  }
+}
+
+/* ---------- LANDSCAPE PHONES ---------- */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    padding: 24px 0;
+  }
+  
+  .section {
+    padding: 24px 0;
+  }
+  
+  .site-header {
+    height: 56px;
+  }
+}
+
+/* ---------- TABLET PORTRAIT ---------- */
+@media (min-width: 600px) and (max-width: 899px) {
+  .features--cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- LARGE SCREENS (> 1400px) ---------- */
+@media (min-width: 1400px) {
+  :root {
+    --container-max: 1320px;
+  }
+  
+  html {
+    font-size: 18px;
+  }
+}
+
+/* ---------- SAFARI-SPECIFIC FIXES ---------- */
+@supports (-webkit-touch-callout: none) {
+  /* Fix for iOS Safari 100vh issue */
+  body {
+    min-height: -webkit-fill-available;
+  }
+  
+  /* Fix sticky header on iOS */
+  .site-header {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+/* ---------- FIREFOX-SPECIFIC FIXES ---------- */
+@-moz-document url-prefix() {
+  /* Improve select styling in Firefox */
+  select {
+    -moz-appearance: none;
+  }
+  
+  /* Fix focus ring in Firefox */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+/* ---------- IE11 FALLBACKS ---------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE11 doesn't support CSS custom properties */
+  .btn--primary {
+    background-color: #184A2C;
+    color: #ffffff;
+  }
+  
+  .site-header {
+    background-color: #ffffff;
+  }
+  
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #FAF7F0;
+    color: #222222;
+  }
+}
+
+/* ---------- NOTCHED DEVICE SUPPORT (iPhone X+) ---------- */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .site-footer {
+    padding-bottom: calc(24px + env(safe-area-inset-bottom));
+  }
+  
+  .back-to-top {
+    bottom: calc(24px + env(safe-area-inset-bottom));
+    right: calc(24px + env(safe-area-inset-right));
   }
 }
