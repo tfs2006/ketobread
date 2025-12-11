@@ -460,9 +460,8 @@ p {
 
 /* ---------- FOOTER ---------- */
 .site-footer {
-  background-color: #3D2914;
-  background-color: var(--color-text);
-  color: var(--color-white);
+  background-color: #3D2914 !important;
+  color: #ffffff;
   padding: var(--space-2xl) 0 var(--space-lg);
 }
 
