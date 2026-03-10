@@ -31,16 +31,31 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "About Keto Bread by 4OurMedia",
-    "description": "Learn about our mission to help people enjoy delicious bread while maintaining a keto lifestyle.",
-    "url": "https://ketobread.4ourmedia.com/about.html",
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "4OurMedia",
-      "email": "ketobread@4ourmedia.com",
-      "description": "Dedicated to providing helpful resources for the keto community."
-    }
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "name": "About Keto Bread by 4OurMedia",
+        "description": "Learn about our mission to help people enjoy delicious low-carb bread while maintaining a keto or grain-free lifestyle.",
+        "url": "https://ketobread.4ourmedia.com/about.html"
+      },
+      {
+        "@type": "Organization",
+        "name": "Keto Bread by 4OurMedia",
+        "alternateName": "4OurMedia",
+        "url": "https://ketobread.4ourmedia.com/",
+        "email": "ketobread@4ourmedia.com",
+        "description": "An independent publishing company dedicated to helping people succeed with keto and low-carb baking through guides, recipes, troubleshooting, and honest product reviews.",
+        "knowsAbout": [
+          "Keto bread recipes",
+          "Low-carb baking",
+          "Almond flour baking",
+          "Coconut flour baking",
+          "Grain-free bread",
+          "Keto diet",
+          "Fathead dough"
+        ]
+      }
+    ]
   }
   </script>
 </head>
