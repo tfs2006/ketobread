@@ -1541,6 +1541,7 @@ p {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   color: #1A1412;
+  color-scheme: light;
   box-shadow: var(--shadow-lg);
 }
 
@@ -1570,22 +1571,32 @@ p {
   background-size: 6px 6px, 6px 6px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  color: var(--color-text);
+  color: #2C1810;
+  color-scheme: light;
   font-family: var(--font-body);
   font-size: 1rem;
+  font-weight: 600;
   min-height: 52px;
+  opacity: 1;
   padding: 12px 48px 12px 14px;
+  -webkit-text-fill-color: #2C1810;
   width: 100%;
 }
 
 .tool-field select option {
   color: #1A1412;
+  background-color: #fffdf9;
 }
 
 .tool-field select:focus {
   border-color: var(--color-accent);
   box-shadow: 0 0 0 3px rgba(212, 168, 75, 0.2);
   outline: none;
+}
+
+.tool-field select:disabled {
+  color: #6A5446;
+  -webkit-text-fill-color: #6A5446;
 }
 
 .tool-actions {
