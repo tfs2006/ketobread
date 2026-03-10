@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Fix eggy keto bread card</title>
+  <desc id="desc">A tall SVG troubleshooting card explaining how to reduce eggy keto bread flavor with four practical fixes and brand attribution.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#26191f"/>
+      <stop offset="52%" stop-color="#6c3a4d"/>
+      <stop offset="100%" stop-color="#efb56f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <circle cx="920" cy="250" r="210" fill="#ffffff" opacity="0.08"/>
+  <rect x="64" y="64" width="952" height="1792" rx="52" fill="#fff8f2"/>
+
+  <rect x="114" y="116" width="320" height="58" rx="29" fill="#6c3a4d"/>
+  <text x="274" y="154" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#fff7f4" letter-spacing="2">TROUBLESHOOTING</text>
+
+  <text x="114" y="264" font-family="Georgia, serif" font-size="86" font-weight="700" fill="#2f1b20">Keto Bread</text>
+  <text x="114" y="356" font-family="Georgia, serif" font-size="86" font-weight="700" fill="#2f1b20">Tastes Like Egg?</text>
+  <text x="114" y="426" font-family="Arial, sans-serif" font-size="32" fill="#65515a">
+    <tspan x="114" dy="0">That sulfur-heavy smell is a formula</tspan>
+    <tspan x="114" dy="38">problem, not bad luck.</tspan>
+  </text>
+
+  <g transform="translate(850 292) scale(0.76)">
+    <ellipse cx="120" cy="136" rx="120" ry="126" fill="#ffe3bf"/>
+    <ellipse cx="120" cy="136" rx="68" ry="90" fill="#fff7eb"/>
+    <circle cx="120" cy="136" r="44" fill="#ffca63"/>
+  </g>
+
+  <rect x="114" y="504" width="852" height="132" rx="28" fill="#f8ebdd" stroke="#ead2bf"/>
+  <text x="156" y="552" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#91543d">MAIN IDEA</text>
+  <text x="156" y="590" font-family="Arial, sans-serif" font-size="31" fill="#35231d">
+    <tspan x="156" dy="0">Most eggy loaves use too much whole egg for the</tspan>
+    <tspan x="156" dy="38">amount of flour, fat, and flavor support in the batter.</tspan>
+  </text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="114" y="706" width="852" height="176" rx="28" fill="#fffdf9" stroke="#e7d7c9"/>
+    <rect x="138" y="734" width="74" height="74" rx="22" fill="#6c3a4d"/>
+    <text x="175" y="784" text-anchor="middle" font-size="36" font-weight="700" fill="#fff8f4">1</text>
+    <text x="240" y="766" font-size="38" font-weight="700" fill="#2f1b20">Use fewer whole eggs</text>
+    <text x="240" y="810" font-size="30" fill="#42312a">
+      <tspan x="240" dy="0">Swap part of the structure to egg whites, cheese,</tspan>
+      <tspan x="240" dy="36">or psyllium so the loaf stops tasting like breakfast.</tspan>
+    </text>
+
+    <rect x="114" y="914" width="852" height="176" rx="28" fill="#fffdf9" stroke="#e7d7c9"/>
+    <rect x="138" y="942" width="74" height="74" rx="22" fill="#6c3a4d"/>
+    <text x="175" y="992" text-anchor="middle" font-size="36" font-weight="700" fill="#fff8f4">2</text>
+    <text x="240" y="974" font-size="38" font-weight="700" fill="#2f1b20">Add stronger flavor anchors</text>
+    <text x="240" y="1018" font-size="30" fill="#42312a">
+      <tspan x="240" dy="0">Salt, butter, vinegar, garlic powder, herbs, or</tspan>
+      <tspan x="240" dy="36">toasted notes help move the loaf back toward bread.</tspan>
+    </text>
+
+    <rect x="114" y="1122" width="852" height="176" rx="28" fill="#fffdf9" stroke="#e7d7c9"/>
+    <rect x="138" y="1150" width="74" height="74" rx="22" fill="#6c3a4d"/>
+    <text x="175" y="1200" text-anchor="middle" font-size="36" font-weight="700" fill="#fff8f4">3</text>
+    <text x="240" y="1182" font-size="38" font-weight="700" fill="#2f1b20">Do not underbake it</text>
+    <text x="240" y="1226" font-size="30" fill="#42312a">
+      <tspan x="240" dy="0">Wet centers smell more eggy. Bake until the interior</tspan>
+      <tspan x="240" dy="36">sets, then cool fully before slicing.</tspan>
+    </text>
+
+    <rect x="114" y="1330" width="852" height="176" rx="28" fill="#fffdf9" stroke="#e7d7c9"/>
+    <rect x="138" y="1358" width="74" height="74" rx="22" fill="#6c3a4d"/>
+    <text x="175" y="1408" text-anchor="middle" font-size="36" font-weight="700" fill="#fff8f4">4</text>
+    <text x="240" y="1388" font-size="36" font-weight="700" fill="#2f1b20">Choose the right bread style</text>
+    <text x="240" y="1434" font-size="30" fill="#42312a">
+      <tspan x="240" dy="0">If you want savory sandwich bread, start from</tspan>
+      <tspan x="240" dy="36">almond flour or loaf-style recipes,</tspan>
+      <tspan x="240" dy="36">not cloud-style rounds.</tspan>
+    </text>
+  </g>
+
+  <rect x="114" y="1562" width="852" height="168" rx="28" fill="#321d22"/>
+  <text x="156" y="1616" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#f0c47a">SAVE THIS TEST</text>
+  <text x="156" y="1658" font-family="Arial, sans-serif" font-size="31" fill="#fff6f3">
+    <tspan x="156" dy="0">If the loaf smells like eggs before you even slice it,</tspan>
+    <tspan x="156" dy="38">the ratio is off before the texture is even evaluated.</tspan>
+  </text>
+
+  <rect x="64" y="1756" width="952" height="100" fill="#1d1114"/>
+  <text x="114" y="1815" font-family="Georgia, serif" font-size="38" font-weight="700" fill="#fff7f2">ketobread.4ourmedia.com</text>
+  <text x="968" y="1815" text-anchor="end" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#f0c47a">FIX + SHARE</text>
+</svg>

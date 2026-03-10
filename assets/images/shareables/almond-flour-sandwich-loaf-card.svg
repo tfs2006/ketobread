@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Almond flour sandwich loaf formula card</title>
+  <desc id="desc">A vertical SVG card showing a keto almond flour sandwich loaf formula, timing, and texture tips with ketobread.4ourmedia.com branding.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2f28"/>
+      <stop offset="58%" stop-color="#48624d"/>
+      <stop offset="100%" stop-color="#c7a26a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <path d="M0 1430c140-80 317-97 440-38 122 60 225 77 351 47 113-27 204-17 289 28v453H0z" fill="#f4e8d7" opacity="0.18"/>
+  <rect x="66" y="66" width="948" height="1788" rx="48" fill="#fbf6ef"/>
+
+  <rect x="118" y="118" width="374" height="60" rx="30" fill="#294236"/>
+  <text x="305" y="156" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#f8f3ec" letter-spacing="2">SANDWICH LOAF</text>
+
+  <text x="118" y="262" font-family="Georgia, serif" font-size="86" font-weight="700" fill="#213128">Almond Flour</text>
+  <text x="118" y="356" font-family="Georgia, serif" font-size="86" font-weight="700" fill="#213128">Bread Formula</text>
+  <text x="118" y="424" font-family="Arial, sans-serif" font-size="32" fill="#526255">
+    <tspan x="118" dy="0">The version people actually want</tspan>
+    <tspan x="118" dy="38">for toast and sandwiches</tspan>
+  </text>
+
+  <g transform="translate(790 258)">
+    <rect x="0" y="120" width="220" height="128" rx="24" fill="#9e7246"/>
+    <path d="M0 144c0-54 49-108 110-108s110 54 110 108" fill="#e4c192"/>
+    <rect x="26" y="146" width="168" height="80" rx="18" fill="#f1d7ae"/>
+    <circle cx="54" cy="174" r="8" fill="#c49660"/>
+    <circle cx="110" cy="166" r="8" fill="#c49660"/>
+    <circle cx="164" cy="180" r="8" fill="#c49660"/>
+  </g>
+
+  <rect x="118" y="502" width="844" height="156" rx="28" fill="#f1e4d1"/>
+  <text x="158" y="548" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#7b5a25">THE GOAL</text>
+  <text x="158" y="588" font-family="Arial, sans-serif" font-size="31" fill="#342821">
+    <tspan x="158" dy="0">Neutral flavor, clean slices, better toast, and</tspan>
+    <tspan x="158" dy="38">enough structure for real fillings.</tspan>
+  </text>
+
+  <text x="118" y="744" font-family="Georgia, serif" font-size="50" font-weight="700" fill="#213128">Core Formula</text>
+  <g font-family="Arial, sans-serif" font-size="34" fill="#30251f">
+    <rect x="118" y="784" width="844" height="88" rx="24" fill="#fffdf8" stroke="#dfd0bb"/>
+    <text x="156" y="840">2 cups almond flour</text>
+    <text x="820" y="840" text-anchor="end" fill="#7a5d0a">fine grind only</text>
+
+    <rect x="118" y="894" width="844" height="88" rx="24" fill="#fffdf8" stroke="#dfd0bb"/>
+    <text x="156" y="950">4 eggs + 1 tbsp vinegar</text>
+    <text x="820" y="950" text-anchor="end" fill="#7a5d0a">lift + balance</text>
+
+    <rect x="118" y="1004" width="844" height="88" rx="24" fill="#fffdf8" stroke="#dfd0bb"/>
+    <text x="156" y="1060">1/4 cup melted butter</text>
+    <text x="820" y="1060" text-anchor="end" fill="#7a5d0a">softness</text>
+
+    <rect x="118" y="1114" width="844" height="88" rx="24" fill="#fffdf8" stroke="#dfd0bb"/>
+    <text x="156" y="1170">2 tsp baking powder + salt</text>
+    <text x="820" y="1170" text-anchor="end" fill="#7a5d0a">rise + flavor</text>
+  </g>
+
+  <text x="118" y="1304" font-family="Georgia, serif" font-size="50" font-weight="700" fill="#213128">Bake Window</text>
+  <g font-family="Arial, sans-serif" font-size="34" fill="#30251f">
+    <circle cx="142" cy="1360" r="9" fill="#c06d33"/>
+    <text x="170" y="1372">350°F in a 9 x 5 loaf pan</text>
+    <circle cx="142" cy="1426" r="9" fill="#c06d33"/>
+    <text x="170" y="1432" font-size="31">
+      <tspan x="170" dy="0">30 to 35 minutes until</tspan>
+      <tspan x="170" dy="34">the center is set</tspan>
+    </text>
+    <circle cx="142" cy="1492" r="9" fill="#c06d33"/>
+    <text x="170" y="1504">Cool completely before slicing</text>
+  </g>
+
+  <rect x="118" y="1564" width="844" height="176" rx="28" fill="#213128"/>
+  <text x="156" y="1620" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#e9cd92">WHY MANY LOAVES FAIL</text>
+  <text x="156" y="1662" font-family="Arial, sans-serif" font-size="31" fill="#f5efe7">
+    <tspan x="156" dy="0">Coarse almond meal, slicing while hot, and</tspan>
+    <tspan x="156" dy="38">overbaking are the three fastest ways to ruin texture.</tspan>
+  </text>
+
+  <rect x="66" y="1754" width="948" height="100" fill="#162019"/>
+  <text x="118" y="1813" font-family="Georgia, serif" font-size="38" font-weight="700" fill="#fff8ef">ketobread.4ourmedia.com</text>
+  <text x="966" y="1813" text-anchor="end" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#e8c886">POST THIS FORMULA</text>
+</svg>

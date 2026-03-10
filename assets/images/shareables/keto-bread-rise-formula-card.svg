@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Keto bread rise formula card</title>
+  <desc id="desc">A vertical SVG card showing the formula for helping keto bread rise, including lift, structure, and bake sequence, branded for ketobread.4ourmedia.com.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#15271d"/>
+      <stop offset="58%" stop-color="#3d6a49"/>
+      <stop offset="100%" stop-color="#e0b766"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <circle cx="884" cy="234" r="174" fill="#fff9ef" opacity="0.09"/>
+  <rect x="70" y="70" width="940" height="1780" rx="50" fill="#fbf7ef"/>
+
+  <rect x="120" y="118" width="324" height="58" rx="29" fill="#355d40"/>
+  <text x="282" y="156" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#f7f5ef" letter-spacing="2">RISE FORMULA</text>
+
+  <text x="120" y="260" font-family="Georgia, serif" font-size="86" font-weight="700" fill="#223026">Keto Bread That</text>
+  <text x="120" y="352" font-family="Georgia, serif" font-size="86" font-weight="700" fill="#223026">Actually Rises</text>
+  <text x="120" y="422" font-family="Arial, sans-serif" font-size="32" fill="#56685a">
+    <tspan x="120" dy="0">Better lift comes from the right sequence,</tspan>
+    <tspan x="120" dy="40">not from adding random extra baking powder.</tspan>
+  </text>
+
+  <g transform="translate(816 248)">
+    <rect x="54" y="92" width="120" height="132" rx="18" fill="#a37243"/>
+    <path d="M54 102c0-50 24-92 60-92s60 42 60 92" fill="#e8c18f"/>
+    <circle cx="114" cy="34" r="12" fill="#fff3d7"/>
+    <circle cx="88" cy="58" r="10" fill="#fff3d7"/>
+    <circle cx="140" cy="62" r="10" fill="#fff3d7"/>
+  </g>
+
+  <rect x="120" y="500" width="840" height="164" rx="28" fill="#eef4e8" stroke="#d5e1cf"/>
+  <text x="160" y="546" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#5f7429">SAVE THIS RULE</text>
+  <text x="160" y="598" font-family="Arial, sans-serif" font-size="31" fill="#273127">
+    <tspan x="160" dy="0">Rise needs three things at once: gas, a structure</tspan>
+    <tspan x="160" dy="38">that traps it, and enough heat to set that structure</tspan>
+    <tspan x="160" dy="38">before collapse.</tspan>
+  </text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="120" y="708" width="840" height="160" rx="28" fill="#fffdfa" stroke="#d8e0cf"/>
+    <text x="160" y="764" font-size="38" font-weight="700" fill="#223026">1. Build air first</text>
+    <text x="160" y="806" font-size="30" fill="#324036">
+      <tspan x="160" dy="0">Whipped egg whites and fresh baking powder</tspan>
+      <tspan x="160" dy="36">create more lift than extra flour ever will.</tspan>
+    </text>
+
+    <rect x="120" y="902" width="840" height="160" rx="28" fill="#fffdfa" stroke="#d8e0cf"/>
+    <text x="160" y="958" font-size="38" font-weight="700" fill="#223026">2. Trap the bubbles</text>
+    <text x="160" y="1000" font-size="30" fill="#324036">
+      <tspan x="160" dy="0">Use binders like psyllium, cheese, or a proven loaf</tspan>
+      <tspan x="160" dy="36">ratio so the batter holds shape while it bakes.</tspan>
+    </text>
+
+    <rect x="120" y="1096" width="840" height="160" rx="28" fill="#fffdfa" stroke="#d8e0cf"/>
+    <text x="160" y="1152" font-size="38" font-weight="700" fill="#223026">3. Pick the right pan</text>
+    <text x="160" y="1194" font-size="30" fill="#324036">
+      <tspan x="160" dy="0">Too-wide pans flatten the loaf before the center</tspan>
+      <tspan x="160" dy="36">ever has a chance to climb.</tspan>
+    </text>
+
+    <rect x="120" y="1290" width="840" height="160" rx="28" fill="#fffdfa" stroke="#d8e0cf"/>
+    <text x="160" y="1346" font-size="38" font-weight="700" fill="#223026">4. Bake long enough to set</text>
+    <text x="160" y="1388" font-size="30" fill="#324036">
+      <tspan x="160" dy="0">A loaf that rises and sinks usually looked good</tspan>
+      <tspan x="160" dy="36">early but never fully stabilized.</tspan>
+    </text>
+  </g>
+
+  <text x="120" y="1498" font-family="Georgia, serif" font-size="48" font-weight="700" fill="#223026">Short Version</text>
+  <text x="120" y="1550" font-family="Arial, sans-serif" font-size="28" fill="#2e3c31">
+    <tspan x="120" dy="0">Do less guessing. Start with a batter built for lift,</tspan>
+    <tspan x="120" dy="34">use a realistic loaf pan, and wait</tspan>
+    <tspan x="120" dy="34">for a true set before pulling it.</tspan>
+  </text>
+
+  <rect x="120" y="1648" width="840" height="84" rx="28" fill="#223026"/>
+  <text x="160" y="1682" font-family="Arial, sans-serif" font-size="27" fill="#f7f6ef">
+    <tspan x="160" dy="0">The best keto rise looks boring in the bowl</tspan>
+    <tspan x="160" dy="30">and strong in the oven.</tspan>
+  </text>
+
+  <rect x="70" y="1750" width="940" height="100" fill="#17241a"/>
+  <text x="120" y="1809" font-family="Georgia, serif" font-size="38" font-weight="700" fill="#fff8ee">ketobread.4ourmedia.com</text>
+  <text x="958" y="1809" text-anchor="end" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#e9c984">POST THE FORMULA</text>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Soft keto burger buns rules card</title>
+  <desc id="desc">A vertical SVG card with keto burger bun advice about softness, shaping, and structure, branded with ketobread.4ourmedia.com.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c2418"/>
+      <stop offset="56%" stop-color="#53663d"/>
+      <stop offset="100%" stop-color="#e0b565"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <rect x="70" y="70" width="940" height="1780" rx="50" fill="#fbf6ee"/>
+  <circle cx="892" cy="230" r="170" fill="#fff4dc" opacity="0.08"/>
+
+  <rect x="120" y="118" width="314" height="58" rx="29" fill="#53663d"/>
+  <text x="277" y="156" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#f8f5ef" letter-spacing="2">MEAL-USE CARD</text>
+
+  <text x="120" y="262" font-family="Georgia, serif" font-size="84" font-weight="700" fill="#26301f">Soft Keto</text>
+  <text x="120" y="352" font-family="Georgia, serif" font-size="84" font-weight="700" fill="#26301f">Burger Bun Rules</text>
+  <text x="120" y="420" font-family="Arial, sans-serif" font-size="32" fill="#5e6855">
+    <tspan x="120" dy="0">Good keto buns are short, soft, and stable.</tspan>
+    <tspan x="120" dy="38">Tall drama is usually a bad sign.</tspan>
+  </text>
+
+  <g transform="translate(846 302) scale(0.72)">
+    <path d="M34 142c0-46 43-92 120-92s120 46 120 92" fill="#f1c67c"/>
+    <rect x="42" y="144" width="224" height="30" rx="15" fill="#588049"/>
+    <rect x="56" y="178" width="196" height="26" rx="13" fill="#6d3728"/>
+    <rect x="46" y="210" width="216" height="34" rx="17" fill="#efc478"/>
+    <circle cx="96" cy="92" r="5" fill="#fff1d7"/>
+    <circle cx="136" cy="82" r="5" fill="#fff1d7"/>
+    <circle cx="184" cy="96" r="5" fill="#fff1d7"/>
+  </g>
+
+  <rect x="120" y="500" width="840" height="166" rx="28" fill="#eef0e4" stroke="#d9deca"/>
+  <text x="160" y="544" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#6c7430">WHY THIS GETS SAVED</text>
+  <text x="160" y="584" font-family="Arial, sans-serif" font-size="31" fill="#30372b">
+    <tspan x="160" dy="0">Most people do not want a keto bun.</tspan>
+    <tspan x="160" dy="38">They want a burger that does not collapse</tspan>
+    <tspan x="160" dy="38">halfway through eating it.</tspan>
+  </text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="120" y="700" width="840" height="156" rx="28" fill="#fffdfa" stroke="#dfe2d4"/>
+    <text x="160" y="756" font-size="38" font-weight="700" fill="#26301f">Rule 1: Keep the shape low and wide</text>
+    <text x="160" y="798" font-size="30" fill="#384034">
+      <tspan x="160" dy="0">Tall narrow buns bake unevenly and feel wrong</tspan>
+      <tspan x="160" dy="36">with real burger fillings.</tspan>
+    </text>
+
+    <rect x="120" y="888" width="840" height="156" rx="28" fill="#fffdfa" stroke="#dfe2d4"/>
+    <text x="160" y="944" font-size="38" font-weight="700" fill="#26301f">Rule 2: Soft beats airy</text>
+    <text x="160" y="986" font-size="30" fill="#384034">
+      <tspan x="160" dy="0">Large pockets look impressive but often collapse</tspan>
+      <tspan x="160" dy="36">or split under grease and toppings.</tspan>
+    </text>
+
+    <rect x="120" y="1076" width="840" height="156" rx="28" fill="#fffdfa" stroke="#dfe2d4"/>
+    <text x="160" y="1132" font-size="38" font-weight="700" fill="#26301f">Rule 3: Slice only when cool</text>
+    <text x="160" y="1174" font-size="30" fill="#384034">
+      <tspan x="160" dy="0">Hot steam makes even decent buns</tspan>
+      <tspan x="160" dy="36">seem gummy and fragile.</tspan>
+    </text>
+
+    <rect x="120" y="1264" width="840" height="156" rx="28" fill="#fffdfa" stroke="#dfe2d4"/>
+    <text x="160" y="1320" font-size="38" font-weight="700" fill="#26301f">Rule 4: Toast the cut sides</text>
+    <text x="160" y="1362" font-size="30" fill="#384034">
+      <tspan x="160" dy="0">A fast toast adds structure and keeps sauces</tspan>
+      <tspan x="160" dy="36">from soaking the crumb instantly.</tspan>
+    </text>
+  </g>
+
+  <text x="120" y="1484" font-family="Georgia, serif" font-size="48" font-weight="700" fill="#26301f">Best Mindset</text>
+  <text x="120" y="1538" font-family="Arial, sans-serif" font-size="30" fill="#384034">
+    <tspan x="120" dy="0">Aim for reliable sandwich behavior, not maximum loft.</tspan>
+    <tspan x="120" dy="36">The bun exists to support the meal.</tspan>
+  </text>
+
+  <rect x="120" y="1602" width="840" height="124" rx="28" fill="#26301f"/>
+  <text x="160" y="1654" font-family="Arial, sans-serif" font-size="29" fill="#fff8ef">
+    <tspan x="160" dy="0">If the bun can handle a real burger without cracking,</tspan>
+    <tspan x="160" dy="34">it is already ahead of most keto recipes online.</tspan>
+  </text>
+
+  <rect x="70" y="1750" width="940" height="100" fill="#1a2115"/>
+  <text x="120" y="1809" font-family="Georgia, serif" font-size="38" font-weight="700" fill="#fff8ef">ketobread.4ourmedia.com</text>
+  <text x="960" y="1809" text-anchor="end" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ecc983">SAVE FOR GRILL DAY</text>
+</svg>

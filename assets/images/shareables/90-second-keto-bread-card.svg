@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">90-Second Keto Bread recipe card</title>
+  <desc id="desc">A vertical shareable SVG card with a quick keto bread recipe, ingredient list, and method branded for ketobread.4ourmedia.com.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f1f17"/>
+      <stop offset="55%" stop-color="#7a4b2a"/>
+      <stop offset="100%" stop-color="#e0a44e"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf3"/>
+      <stop offset="100%" stop-color="#f4e7d7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <circle cx="920" cy="240" r="180" fill="#ffffff" opacity="0.08"/>
+  <circle cx="210" cy="1600" r="220" fill="#fff0d9" opacity="0.07"/>
+  <rect x="58" y="58" width="964" height="1804" rx="44" fill="url(#card)"/>
+
+  <rect x="110" y="112" width="300" height="58" rx="29" fill="#5d4037"/>
+  <text x="260" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#fff7ef" letter-spacing="2">RECIPE CARD</text>
+
+  <text x="110" y="260" font-family="Georgia, serif" font-size="92" font-weight="700" fill="#2c1810">90-Second</text>
+  <text x="110" y="362" font-family="Georgia, serif" font-size="92" font-weight="700" fill="#2c1810">Keto Bread</text>
+  <text x="110" y="432" font-family="Arial, sans-serif" font-size="34" fill="#6e4a33">Fast, toastable, and beginner-friendly</text>
+
+  <g transform="translate(812 280)">
+    <circle cx="110" cy="110" r="110" fill="#fff2d9"/>
+    <path d="M42 112c0-54 34-92 68-92s68 38 68 92v96H42z" fill="#d5a36c"/>
+    <path d="M58 116c0-42 25-70 52-70s52 28 52 70v70H58z" fill="#f2d1a0"/>
+    <rect x="73" y="76" width="14" height="44" rx="7" fill="#8b5e34"/>
+    <rect x="133" y="76" width="14" height="44" rx="7" fill="#8b5e34"/>
+  </g>
+
+  <rect x="110" y="500" width="860" height="150" rx="26" fill="#fff3df" stroke="#e2c79f"/>
+  <text x="150" y="546" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#7b5617">WHY PEOPLE SAVE THIS</text>
+  <text x="150" y="586" font-family="Arial, sans-serif" font-size="31" fill="#3b2a20">
+    <tspan x="150" dy="0">A real bread fix in under 2 minutes, with pantry</tspan>
+    <tspan x="150" dy="38">ingredients and no long bake.</tspan>
+  </text>
+
+  <text x="110" y="740" font-family="Georgia, serif" font-size="50" font-weight="700" fill="#2c1810">What You Need</text>
+  <g font-family="Arial, sans-serif" font-size="34" fill="#33231b">
+    <circle cx="134" cy="800" r="8" fill="#d4763b"/>
+    <text x="164" y="812">3 tbsp almond flour</text>
+    <circle cx="134" cy="864" r="8" fill="#d4763b"/>
+    <text x="164" y="876">1 tbsp melted butter</text>
+    <circle cx="134" cy="928" r="8" fill="#d4763b"/>
+    <text x="164" y="940">1 egg</text>
+    <circle cx="134" cy="992" r="8" fill="#d4763b"/>
+    <text x="164" y="1004">1/2 tsp baking powder</text>
+    <circle cx="134" cy="1056" r="8" fill="#d4763b"/>
+    <text x="164" y="1068">Pinch of salt</text>
+  </g>
+
+  <text x="110" y="1176" font-family="Georgia, serif" font-size="50" font-weight="700" fill="#2c1810">Quick Method</text>
+  <g font-family="Arial, sans-serif" fill="#33231b">
+    <rect x="112" y="1218" width="52" height="52" rx="26" fill="#5d4037"/>
+    <text x="138" y="1254" text-anchor="middle" font-size="28" font-weight="700" fill="#fff6ee">1</text>
+    <text x="190" y="1248" font-size="31">
+      <tspan x="190" dy="0">Mix everything smooth in a mug</tspan>
+      <tspan x="190" dy="36">or ramekin.</tspan>
+    </text>
+
+    <rect x="112" y="1306" width="52" height="52" rx="26" fill="#5d4037"/>
+    <text x="138" y="1342" text-anchor="middle" font-size="28" font-weight="700" fill="#fff6ee">2</text>
+    <text x="190" y="1342" font-size="34">Microwave for 90 seconds.</text>
+
+    <rect x="112" y="1394" width="52" height="52" rx="26" fill="#5d4037"/>
+    <text x="138" y="1430" text-anchor="middle" font-size="28" font-weight="700" fill="#fff6ee">3</text>
+    <text x="190" y="1418" font-size="31">
+      <tspan x="190" dy="0">Cool for 1 minute, slice, then toast</tspan>
+      <tspan x="190" dy="36">if you want crunch.</tspan>
+    </text>
+  </g>
+
+  <rect x="110" y="1514" width="860" height="174" rx="28" fill="#3d2b1f"/>
+  <text x="152" y="1570" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffd782">BETTER RESULT</text>
+  <text x="152" y="1612" font-family="Arial, sans-serif" font-size="31" fill="#fff8f1">
+    <tspan x="152" dy="0">Let it cool fully before slicing.</tspan>
+    <tspan x="152" dy="38">Pan-toast in butter for the best texture.</tspan>
+  </text>
+
+  <rect x="58" y="1746" width="964" height="116" rx="0" fill="#241710"/>
+  <text x="110" y="1810" font-family="Georgia, serif" font-size="38" font-weight="700" fill="#fff5ea">ketobread.4ourmedia.com</text>
+  <text x="970" y="1810" text-anchor="end" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffcf7b">SAVE + SHARE</text>
+</svg>

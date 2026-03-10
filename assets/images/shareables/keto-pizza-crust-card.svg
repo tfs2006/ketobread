@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Keto pizza crust cheat sheet card</title>
+  <desc id="desc">A 9 by 16 SVG shareable card showing how to get a crisp keto pizza crust with par-baking and topping control, branded for ketobread.4ourmedia.com.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d1714"/>
+      <stop offset="56%" stop-color="#8a3b24"/>
+      <stop offset="100%" stop-color="#efb85e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <rect x="68" y="68" width="944" height="1784" rx="52" fill="#fff7ef"/>
+  <circle cx="894" cy="230" r="168" fill="#fff3dd" opacity="0.1"/>
+
+  <rect x="118" y="118" width="334" height="58" rx="29" fill="#8a3b24"/>
+  <text x="285" y="156" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#fff7f0" letter-spacing="2">PIZZA NIGHT FIX</text>
+
+  <text x="118" y="262" font-family="Georgia, serif" font-size="84" font-weight="700" fill="#311913">Keto Pizza Crust</text>
+  <text x="118" y="352" font-family="Georgia, serif" font-size="84" font-weight="700" fill="#311913">Cheat Sheet</text>
+  <text x="118" y="420" font-family="Arial, sans-serif" font-size="32" fill="#6b5448">
+    <tspan x="118" dy="0">Use this when your crust goes limp, soggy,</tspan>
+    <tspan x="118" dy="38">or never tastes like pizza.</tspan>
+  </text>
+
+  <g transform="translate(852 296) scale(0.76)">
+    <circle cx="110" cy="110" r="110" fill="#f2c77a"/>
+    <circle cx="110" cy="110" r="94" fill="#f7d796"/>
+    <circle cx="74" cy="94" r="14" fill="#d45d3c"/>
+    <circle cx="136" cy="124" r="14" fill="#d45d3c"/>
+    <circle cx="120" cy="72" r="14" fill="#d45d3c"/>
+    <circle cx="88" cy="148" r="14" fill="#d45d3c"/>
+  </g>
+
+  <rect x="118" y="500" width="844" height="166" rx="28" fill="#f8e7d7" stroke="#ebcfb9"/>
+  <text x="160" y="544" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#9c5a1f">THE BIG SWITCH</text>
+  <text x="160" y="584" font-family="Arial, sans-serif" font-size="31" fill="#39231b">
+    <tspan x="160" dy="0">A good keto crust is not just dough.</tspan>
+    <tspan x="160" dy="38">It is a staged bake: shape, par-bake,</tspan>
+    <tspan x="160" dy="38">top lightly, finish hot.</tspan>
+  </text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="118" y="698" width="844" height="164" rx="28" fill="#fffdfa" stroke="#ead7ca"/>
+    <text x="158" y="754" font-size="38" font-weight="700" fill="#311913">1. Pat it thinner than you think</text>
+    <text x="158" y="796" font-size="30" fill="#4a342c">
+      <tspan x="158" dy="0">Thick low-carb crusts trap moisture and turn</tspan>
+      <tspan x="158" dy="36">bready before the bottom crisps.</tspan>
+    </text>
+
+    <rect x="118" y="894" width="844" height="164" rx="28" fill="#fffdfa" stroke="#ead7ca"/>
+    <text x="158" y="950" font-size="38" font-weight="700" fill="#311913">2. Par-bake first</text>
+    <text x="158" y="992" font-size="30" fill="#4a342c">
+      <tspan x="158" dy="0">Give the base 8 to 10 minutes on its own</tspan>
+      <tspan x="158" dy="36">before adding sauce or cheese.</tspan>
+    </text>
+
+    <rect x="118" y="1090" width="844" height="164" rx="28" fill="#fffdfa" stroke="#ead7ca"/>
+    <text x="158" y="1146" font-size="38" font-weight="700" fill="#311913">3. Go easy on toppings</text>
+    <text x="158" y="1188" font-size="30" fill="#4a342c">
+      <tspan x="158" dy="0">Too much sauce or too many wet toppings crushes</tspan>
+      <tspan x="158" dy="36">the texture advantage you just built.</tspan>
+    </text>
+
+    <rect x="118" y="1286" width="844" height="164" rx="28" fill="#fffdfa" stroke="#ead7ca"/>
+    <text x="158" y="1342" font-size="38" font-weight="700" fill="#311913">4. Finish hot</text>
+    <text x="158" y="1384" font-size="30" fill="#4a342c">
+      <tspan x="158" dy="0">A hot oven or preheated surface helps set the</tspan>
+      <tspan x="158" dy="36">underside before the top floods it with moisture.</tspan>
+    </text>
+  </g>
+
+  <rect x="118" y="1510" width="844" height="214" rx="28" fill="#311913"/>
+  <text x="158" y="1568" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#f7c980">BEST QUICK TAKE</text>
+  <text x="158" y="1610" font-family="Arial, sans-serif" font-size="29" fill="#fff8f1">
+    <tspan x="158" dy="0">The crispiest keto pizza crusts are usually thinner,</tspan>
+    <tspan x="158" dy="36">less loaded, and more disciplined than</tspan>
+    <tspan x="158" dy="36">the dramatic ones people post first.</tspan>
+  </text>
+
+  <rect x="68" y="1752" width="944" height="100" fill="#23120f"/>
+  <text x="118" y="1811" font-family="Georgia, serif" font-size="38" font-weight="700" fill="#fff8ef">ketobread.4ourmedia.com</text>
+  <text x="960" y="1811" text-anchor="end" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#f4ca84">SAVE FOR DINNER</text>
+</svg>

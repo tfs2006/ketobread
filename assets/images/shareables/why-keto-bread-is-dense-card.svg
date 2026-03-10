@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Why keto bread gets dense card</title>
+  <desc id="desc">A 9 by 16 SVG troubleshooting card that explains why keto bread becomes dense and how to correct it, branded with ketobread.4ourmedia.com.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#18212a"/>
+      <stop offset="55%" stop-color="#2f4a63"/>
+      <stop offset="100%" stop-color="#d7a869"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <rect x="72" y="72" width="936" height="1776" rx="50" fill="#f9f4ed"/>
+  <circle cx="890" cy="228" r="162" fill="#ffffff" opacity="0.09"/>
+
+  <rect x="120" y="118" width="286" height="58" rx="29" fill="#304b61"/>
+  <text x="263" y="156" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#f7f4ee" letter-spacing="2">DENSE LOAF FIX</text>
+
+  <text x="120" y="262" font-family="Georgia, serif" font-size="86" font-weight="700" fill="#1e2b34">Why Keto Bread</text>
+  <text x="120" y="354" font-family="Georgia, serif" font-size="86" font-weight="700" fill="#1e2b34">Turns Dense</text>
+  <text x="120" y="422" font-family="Arial, sans-serif" font-size="32" fill="#5d6b73">
+    <tspan x="120" dy="0">Heavy loaves usually fail in one of three places:</tspan>
+    <tspan x="120" dy="40">lift, structure, or pan choice.</tspan>
+  </text>
+
+  <g transform="translate(854 296) scale(0.74)">
+    <rect x="20" y="86" width="172" height="134" rx="26" fill="#94633c"/>
+    <rect x="46" y="102" width="120" height="88" rx="18" fill="#c8935e"/>
+    <path d="M26 98c14-40 52-64 80-64s66 24 80 64" fill="none" stroke="#e8c08d" stroke-width="18" stroke-linecap="round"/>
+  </g>
+
+  <rect x="120" y="500" width="840" height="162" rx="28" fill="#eef3f6" stroke="#d2dde4"/>
+  <text x="160" y="546" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#3f5f73">FAST READ</text>
+  <text x="160" y="598" font-family="Arial, sans-serif" font-size="31" fill="#24323a">
+    <tspan x="160" dy="0">Gas can be created in the batter, but without enough</tspan>
+    <tspan x="160" dy="38">structure and the right pan depth, the loaf still</tspan>
+    <tspan x="160" dy="38">bakes like a brick.</tspan>
+  </text>
+
+  <g font-family="Arial, sans-serif" fill="#25333b">
+    <rect x="120" y="706" width="840" height="174" rx="28" fill="#fffdf9" stroke="#d8e0e4"/>
+    <text x="160" y="760" font-size="38" font-weight="700">1. Not enough lift</text>
+    <text x="160" y="806" font-size="30">
+      <tspan x="160" dy="0">Old baking powder, no whipped whites, or overly</tspan>
+      <tspan x="160" dy="36">heavy batter keeps the crumb tight.</tspan>
+    </text>
+
+    <rect x="120" y="916" width="840" height="174" rx="28" fill="#fffdf9" stroke="#d8e0e4"/>
+    <text x="160" y="970" font-size="38" font-weight="700">2. Weak structure</text>
+    <text x="160" y="1016" font-size="30">
+      <tspan x="160" dy="0">Low-carb flours need binders like psyllium, egg</tspan>
+      <tspan x="160" dy="36">whites, or cheese to hold air pockets open.</tspan>
+    </text>
+
+    <rect x="120" y="1126" width="840" height="174" rx="28" fill="#fffdf9" stroke="#d8e0e4"/>
+    <text x="160" y="1180" font-size="38" font-weight="700">3. The pan is too big</text>
+    <text x="160" y="1226" font-size="30">
+      <tspan x="160" dy="0">Spread the same batter across too much width and</tspan>
+      <tspan x="160" dy="36">the loaf never gets the height people expect.</tspan>
+    </text>
+  </g>
+
+  <text x="120" y="1396" font-family="Georgia, serif" font-size="48" font-weight="700" fill="#1e2b34">Next-Batch Fixes</text>
+  <g font-family="Arial, sans-serif" font-size="28" fill="#25333b">
+    <circle cx="144" cy="1462" r="9" fill="#c56f35"/>
+    <text x="172" y="1468">
+      <tspan x="172" dy="0">Use fresh leaveners and do not overmix</tspan>
+      <tspan x="172" dy="32">after adding them.</tspan>
+    </text>
+    <circle cx="144" cy="1528" r="9" fill="#c56f35"/>
+    <text x="172" y="1526">
+      <tspan x="172" dy="0">Choose a smaller loaf pan</tspan>
+      <tspan x="172" dy="32">if the recipe volume is modest.</tspan>
+    </text>
+    <circle cx="144" cy="1594" r="9" fill="#c56f35"/>
+    <text x="172" y="1592">
+      <tspan x="172" dy="0">Aim for a batter that can hold air,</tspan>
+      <tspan x="172" dy="32">not one that pours like soup.</tspan>
+    </text>
+  </g>
+
+  <rect x="120" y="1656" width="840" height="82" rx="28" fill="#21313c"/>
+  <text x="160" y="1690" font-family="Arial, sans-serif" font-size="26" fill="#f7f4ee">
+    <tspan x="160" dy="0">Dense keto bread is rarely one problem.</tspan>
+    <tspan x="160" dy="30">It is usually a bad ratio plus the wrong shape for the bake.</tspan>
+  </text>
+
+  <rect x="72" y="1748" width="936" height="100" fill="#152029"/>
+  <text x="120" y="1807" font-family="Georgia, serif" font-size="38" font-weight="700" fill="#fff9f0">ketobread.4ourmedia.com</text>
+  <text x="956" y="1807" text-anchor="end" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#e7c581">SAVE THIS DIAGNOSIS</text>
+</svg>
