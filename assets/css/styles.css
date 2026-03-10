@@ -964,6 +964,7 @@ p {
 .comparison-table .highlight {
   background-color: #FFF8E7;
   font-weight: 600;
+  color: #2C1810; /* Dark text - overrides any golden inline style on the table */
 }
 
 /* ---------- FAQ SECTION ---------- */
@@ -3171,5 +3172,138 @@ p {
   .final-cta__guarantees {
     flex-direction: column;
     gap: 12px;
+  }
+}
+
+/* ==============================================
+   DARK MODE OVERRIDES — LATE COMPONENTS
+   Must appear AFTER all base component styles so
+   equal-specificity overrides win on source order.
+   ============================================== */
+@media (prefers-color-scheme: dark) {
+
+  /* ---- Section backgrounds ---- */
+  .section--pain {
+    background-color: #231e1a;
+  }
+
+  .section--solution {
+    background-color: #1c1815;
+  }
+
+  .section--value {
+    background-color: #231e1a;
+  }
+
+  .section--guarantee {
+    background-color: #1c1815;
+  }
+
+  .section--faq {
+    background-color: #231e1a;
+  }
+
+  .section--emotional-close {
+    background-color: #1c1815;
+  }
+
+  /* ---- Section header titles (general) ---- */
+  .section-header__title {
+    color: #f0ebe6;
+  }
+
+  /* ---- Pain section cards ---- */
+  .pain-point {
+    background-color: #261f1a;
+    border-color: #3a3028;
+  }
+
+  .pain-point h3 {
+    color: #f0ebe6;
+  }
+
+  .pain-point p {
+    color: #c9c0b8;
+  }
+
+  /* ---- Value / pricing cards ---- */
+  .value-item {
+    background-color: #261f1a;
+    border-color: #3a3028;
+  }
+
+  .value-item--main {
+    background: linear-gradient(135deg, #2a2218 0%, #261f1a 100%);
+  }
+
+  .value-item h3 {
+    color: #f0ebe6;
+  }
+
+  .value-item p {
+    color: #c9c0b8;
+  }
+
+  .value-item__features li {
+    color: #c9c0b8;
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .value-total {
+    background: linear-gradient(135deg, #231e1a 0%, #2e2620 100%);
+    border-color: #3a3028;
+  }
+
+  /* ---- FAQ items inside FAQ section ---- */
+  .section--faq .faq__item {
+    background-color: #261f1a;
+    border-color: #3a3028;
+  }
+
+  .section--faq .faq__item summary {
+    background-color: #261f1a;
+    color: #f0ebe6;
+  }
+
+  .section--faq .faq__item summary:hover {
+    background-color: #2a2218;
+  }
+
+  .section--faq .faq__answer {
+    background-color: #261f1a;
+    color: #f0ebe6;
+  }
+
+  /* ---- Guarantee box ---- */
+  .guarantee-box {
+    background: linear-gradient(135deg, #1a2d1a 0%, #162516 100%);
+    border-color: #4caf50;
+  }
+
+  .guarantee-box h2 {
+    color: #a5d6a7;
+  }
+
+  .guarantee-box p {
+    color: #c9c0b8;
+  }
+
+  /* ---- Emotional close ---- */
+  .emotional-close h3 {
+    color: #f0ebe6;
+  }
+
+  .emotional-close p {
+    color: #c9c0b8;
+  }
+
+  .emotional-close strong {
+    color: #f0ebe6;
+  }
+
+  /* ---- Comparison table: highlight column readable in dark mode ---- */
+  .comparison-table .highlight {
+    background-color: #4e342e;
+    color: #ffd54f;
   }
 }
