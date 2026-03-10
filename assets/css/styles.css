@@ -142,7 +142,7 @@ a {
 }
 
 a:hover {
-  color: #D4763B;
+  color: #924200;
   text-decoration: underline;
 }
 
@@ -261,11 +261,11 @@ p {
 }
 
 .section--dark .card a {
-  color: #D4763B;
+  color: #924200;
 }
 
 .section--dark .card a:hover {
-  color: #C16830;
+  color: #7A3600;
 }
 
 /* ---------- BUTTONS ---------- */
@@ -745,7 +745,7 @@ p {
 }
 
 .card a:hover {
-  color: #D4763B;
+  color: #924200;
 }
 
 .card--highlight {
@@ -877,11 +877,11 @@ p {
 }
 
 .pros-cons__title--pros {
-  color: #6B8E5A;
+  color: #4A6E38;
 }
 
 .pros-cons__title--cons {
-  color: #C67D7D;
+  color: #9E3030;
 }
 
 .pros-cons__list {
@@ -1151,7 +1151,7 @@ p {
 }
 
 .blog-card__title a:hover {
-  color: #D4763B;
+  color: #924200;
 }
 
 .blog-card__excerpt {
@@ -1164,7 +1164,7 @@ p {
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 0.9rem;
-  color: #D4763B;
+  color: #924200;
 }
 
 /* ---------- ARTICLE CONTENT ---------- */
@@ -1227,12 +1227,12 @@ p {
 }
 
 .article__content a {
-  color: #D4763B;
+  color: #924200;
   text-decoration: underline;
 }
 
 .article__content a:hover {
-  color: #C16830;
+  color: #7A3600;
 }
 
 .article__callout {
@@ -2469,7 +2469,7 @@ p {
 }
 
 .hero--psychological .hero__title em {
-  color: #D4763B;
+  color: #924200;
   font-style: italic;
 }
 
@@ -2669,7 +2669,7 @@ p {
 }
 
 .section--solution .section-header__title em {
-  color: #D4763B;
+  color: #924200;
   font-style: italic;
 }
 
@@ -2899,7 +2899,7 @@ p {
 }
 
 .value-item__price {
-  color: #D4763B;
+  color: #924200;
   font-weight: 700;
   font-size: 1.125rem;
 }
