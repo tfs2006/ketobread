@@ -1959,6 +1959,11 @@ p {
     color: #f0ebe6;
   }
 
+  /* General heading colors - override hardcoded #2C1810 for all dark backgrounds */
+  h1, h2, h3, h4, h5, h6 {
+    color: #f0ebe6;
+  }
+
   .site-header {
     background-color: #1c1815;
     border-bottom: 1px solid #3a3028;
@@ -2028,6 +2033,14 @@ p {
   /* Article */
   .article {
     background-color: #1c1815;
+  }
+
+  .article__header h1 {
+    color: #f0ebe6;
+  }
+
+  .article__meta {
+    color: #c9c0b8;
   }
 
   .article__content p,
