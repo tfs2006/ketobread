@@ -36,6 +36,7 @@
     flat: { title: 'Keto Bread Won\'t Rise', url: '/blog/keto-bread-wont-rise.html' },
     crumbly: { title: 'Crumbly Keto Bread', url: '/blog/crumbly-keto-bread.html' },
     gummy: { title: 'Why Is My Keto Bread Gummy?', url: '/blog/gummy-keto-bread.html' },
+    dry: { title: 'Why Is My Keto Bread Dry?', url: '/blog/why-is-my-keto-bread-dry.html' },
     almond: { title: 'Almond Flour Keto Bread Guide', url: '/blog/almond-flour-keto-bread-guide.html' },
     coconut: { title: 'Coconut Flour Keto Bread Guide', url: '/blog/coconut-flour-keto-bread-guide.html' },
     eggfree: { title: 'Keto Bread Without Eggs', url: '/blog/keto-bread-without-eggs.html' },
@@ -121,7 +122,7 @@
         'Choose a softer bread format if the ingredients are better suited for buns, rolls, or quick bread.'
       ],
       recipe: 'Shift toward a softer roll, bun, or almond-flour loaf if your current formula keeps baking up sandy or dry.',
-      links: [resources.coconut, resources.rolls, resources.recipes]
+      links: [resources.dry, resources.coconut, resources.rolls, resources.recipes]
     }
   };
 
