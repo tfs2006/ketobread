@@ -3666,6 +3666,7 @@ p {
 }
 
 .shareable-card__body h3 {
+  color: #2C1810;
   margin-bottom: var(--space-sm);
 }
 
