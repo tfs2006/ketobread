@@ -2103,6 +2103,165 @@ p {
   }
 
   /* Urgency bar - keep as-is (intentionally high contrast) */
+
+  /* ---- Section-header text in sections that become dark ---- */
+  .section--alt .section-header__title,
+  .section--pain .section-header__title,
+  .section--faq .section-header__title,
+  .section--value .section-header__title {
+    color: #f0ebe6;
+  }
+
+  .section--alt .section-header__text,
+  .section--pain .section-header__text,
+  .section--faq .section-header__text,
+  .section--value .section-header__text {
+    color: #c9c0b8;
+  }
+
+  /* ---- Pain-point cards (dark bg in dark mode) ---- */
+  .pain-point h3 {
+    color: #f0ebe6;
+  }
+
+  .pain-point p {
+    color: #c9c0b8;
+  }
+
+  /* ---- Value items (dark bg in dark mode) ---- */
+  .value-item h3 {
+    color: #f0ebe6;
+  }
+
+  .value-item p {
+    color: #c9c0b8;
+  }
+
+  .value-item__features li {
+    color: #c9c0b8;
+    border-bottom-color: rgba(255,255,255,0.08);
+  }
+
+  .value-item__price {
+    color: #FFD54F;
+  }
+
+  /* ---- Testimonials (dark bg in dark mode) ---- */
+  .testimonial__quote {
+    color: #c9c0b8;
+  }
+
+  .testimonial__author strong {
+    color: #f0ebe6;
+  }
+
+  .testimonial__verified {
+    color: #81c784;
+  }
+
+  .testimonial__stars {
+    color: #FFD54F;
+  }
+
+  /* ---- Transformation cards ---- */
+  .transformation-card--before {
+    background-color: #2d1a1a;
+    border-color: #6d3030;
+  }
+
+  .transformation-card--before h3 {
+    color: #ef9a9a;
+  }
+
+  .transformation-card--before li {
+    color: #c9c0b8;
+    border-bottom-color: rgba(255,255,255,0.08);
+  }
+
+  .transformation-card--after {
+    background-color: #1a2d1a;
+    border-color: #2e622e;
+    box-shadow: 0 8px 30px rgba(76,175,80,0.2);
+  }
+
+  .transformation-card--after h3 {
+    color: #a5d6a7;
+  }
+
+  .transformation-card--after li {
+    color: #c9c0b8;
+    border-bottom-color: rgba(255,255,255,0.08);
+  }
+
+  /* ---- Section--solution: force dark so it doesn't look like a white island ---- */
+  .section--solution {
+    background-color: #1c1815;
+  }
+
+  /* ---- Section--value stays themed by --color-background-alt ---- */
+  .section--value {
+    background-color: #231e1a;
+  }
+
+  /* ---- Guarantee section ---- */
+  .section--guarantee {
+    background-color: #1c1815;
+  }
+
+  .guarantee-box {
+    background: linear-gradient(135deg, #1a2d1a 0%, #162516 100%);
+    border-color: #4CAF50;
+  }
+
+  .guarantee-box h2 {
+    color: #a5d6a7;
+  }
+
+  .guarantee-box p {
+    color: #c9c0b8;
+  }
+
+  .guarantee-box__subtext {
+    color: #81c784 !important;
+  }
+
+  /* ---- Emotional close ---- */
+  .section--emotional-close {
+    background-color: #1c1815;
+  }
+
+  .emotional-close h3,
+  .emotional-close strong {
+    color: #f0ebe6;
+  }
+
+  .emotional-close p {
+    color: #c9c0b8;
+  }
+
+  /* ---- Value total box ---- */
+  .value-total {
+    background: linear-gradient(135deg, #231e1a 0%, #2e2620 100%);
+    border: 1px solid #3a3028;
+  }
+
+  /* ---- Topic cards ---- */
+  .topic-card h3 {
+    color: #f0ebe6;
+  }
+
+  /* ---- Blog card title and excerpt (fallback for any remaining inline styles) ---- */
+  .blog-card__title a {
+    color: #f0ebe6 !important;
+  }
+
+  .blog-card__excerpt {
+    color: #c9c0b8 !important;
+  }
+
+  .blog-card {
+    background-color: #261f1a !important;
+  }
 }
 
 /* ---------- EXTRA SMALL DEVICES (< 375px) ---------- */
