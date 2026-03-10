@@ -2264,6 +2264,49 @@ p {
     color: #f0ebe6;
   }
 
+  .topic-card li {
+    color: #c9c0b8;
+  }
+
+  /* ---- Recipe cards: fix hardcoded dark text colors ---- */
+  .recipe-card__description p,
+  .recipe-card__ingredients li,
+  .recipe-card__instructions li,
+  .recipe-card__tips p {
+    color: #f0ebe6;
+  }
+
+  .recipe-card__ingredients h3,
+  .recipe-card__instructions h3 {
+    color: #D4B878;
+  }
+
+  .recipe-card__ingredients li::before {
+    color: #D4B878;
+  }
+
+  .recipe-card__instructions li::marker {
+    color: #D4B878;
+  }
+
+  .recipe-card__tips {
+    background-color: #2a2218;
+    border-color: #3a3028;
+    border-left-color: #C9A962;
+  }
+
+  .recipe-card__tips h4 {
+    color: #D4B878;
+  }
+
+  .recipe-info__label {
+    color: #c9c0b8;
+  }
+
+  .recipe-card__info {
+    border-bottom-color: #3a3028;
+  }
+
   /* ---- Blog card title and excerpt (fallback for any remaining inline styles) ---- */
   .blog-card__title a {
     color: #f0ebe6 !important;
