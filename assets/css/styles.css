@@ -1540,6 +1540,7 @@ p {
   background-color: #FFFFFF;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
+  color: #1A1412;
   box-shadow: var(--shadow-lg);
 }
 
@@ -1577,6 +1578,10 @@ p {
   width: 100%;
 }
 
+.tool-field select option {
+  color: #1A1412;
+}
+
 .tool-field select:focus {
   border-color: var(--color-accent);
   box-shadow: 0 0 0 3px rgba(212, 168, 75, 0.2);
@@ -1592,7 +1597,7 @@ p {
 }
 
 .tool-note {
-  color: var(--color-text-muted);
+  color: #6A5446;
   font-size: 0.95rem;
   margin-top: var(--space-md);
 }
@@ -1607,7 +1612,13 @@ p {
 }
 
 .tool-sidebar__card h3 {
+  color: #2C1810;
   margin-bottom: var(--space-md);
+}
+
+.tool-sidebar__card p,
+.tool-sidebar__card li {
+  color: #3F3128;
 }
 
 .tool-sidebar__card--highlight {
@@ -1621,6 +1632,11 @@ p {
 
 .diagnosis-card {
   padding: var(--space-xl);
+}
+
+.diagnosis-card h3,
+.diagnosis-card h4 {
+  color: #2C1810;
 }
 
 .diagnosis-card__header {
@@ -1640,6 +1656,7 @@ p {
 }
 
 .diagnosis-card__summary {
+  color: #4A372C;
   font-size: 1.08rem;
   margin-bottom: var(--space-xl);
 }
@@ -1654,11 +1671,15 @@ p {
 }
 
 .diagnosis-confidence__label {
-  color: var(--color-text-muted);
+  color: #7A624F;
   display: block;
   font-size: 0.82rem;
   margin-bottom: var(--space-xs);
   text-transform: uppercase;
+}
+
+.diagnosis-confidence strong {
+  color: #8A4A14;
 }
 
 .diagnosis-grid {
@@ -1671,6 +1692,7 @@ p {
   background-color: #fffdfa;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
+  color: #2F231C;
   padding: var(--space-lg);
 }
 
@@ -1691,8 +1713,13 @@ p {
   padding-left: 1.25rem;
 }
 
+.diagnosis-panel li,
+.diagnosis-panel p {
+  color: #4A372C;
+}
+
 .diagnosis-panel__meta {
-  color: var(--color-text-muted);
+  color: #6A5446;
   margin-bottom: 0;
   margin-top: var(--space-md);
 }
@@ -1704,10 +1731,10 @@ p {
 }
 
 .diagnosis-link {
-  background-color: var(--color-background-alt);
-  border: 1px solid var(--color-border);
+  background-color: #fff3da;
+  border: 1px solid #e0bf81;
   border-radius: 999px;
-  color: var(--color-primary);
+  color: #6A3200;
   display: inline-flex;
   font-weight: 700;
   padding: 10px 14px;
@@ -1715,6 +1742,9 @@ p {
 }
 
 .diagnosis-link:hover {
+  background-color: #ffe9bd;
+  border-color: #d6a95a;
+  color: #4D2300;
   text-decoration: none;
 }
 
@@ -1727,7 +1757,7 @@ p {
 }
 
 .diagnosis-share__status {
-  color: var(--color-text-muted);
+  color: #6A5446;
   font-size: 0.95rem;
 }
 

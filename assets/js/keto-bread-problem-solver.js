@@ -37,6 +37,8 @@
     crumbly: { title: 'Crumbly Keto Bread', url: '/blog/crumbly-keto-bread.html' },
     gummy: { title: 'Why Is My Keto Bread Gummy?', url: '/blog/gummy-keto-bread.html' },
     dry: { title: 'Why Is My Keto Bread Dry?', url: '/blog/why-is-my-keto-bread-dry.html' },
+    collapse: { title: 'Why Does Keto Bread Collapse After Baking?', url: '/blog/why-does-keto-bread-collapse.html' },
+    sweet: { title: 'Why Does Keto Bread Taste Sweet?', url: '/blog/why-does-keto-bread-taste-sweet.html' },
     almond: { title: 'Almond Flour Keto Bread Guide', url: '/blog/almond-flour-keto-bread-guide.html' },
     coconut: { title: 'Coconut Flour Keto Bread Guide', url: '/blog/coconut-flour-keto-bread-guide.html' },
     eggfree: { title: 'Keto Bread Without Eggs', url: '/blog/keto-bread-without-eggs.html' },
@@ -62,7 +64,7 @@
         'Match the recipe style to the goal. Quick breads and microwave breads rarely mimic bakery sandwich bread.'
       ],
       recipe: 'Move toward an almond flour sandwich loaf or a tested loaf recipe with stronger lift rather than improvising a quick-bread formula into a full loaf.',
-      links: [resources.dense, resources.rise, resources.almond, resources.recipes]
+      links: [resources.dense, resources.collapse, resources.rise, resources.almond, resources.recipes]
     },
     eggy: {
       title: 'Your egg ratio is probably too aggressive for the flour base',
@@ -74,7 +76,7 @@
         'Bake longer at a gentler temperature so the center finishes without staying wet.'
       ],
       recipe: 'If your goal is toast or sandwich bread, use a recipe that relies on flour balance and structure instead of asking eggs to do everything.',
-      links: [resources.eggy, resources.eggfree, resources.almond]
+      links: [resources.eggy, resources.sweet, resources.eggfree, resources.almond]
     },
     flat: {
       title: 'Your bread likely failed on lift, not flavor',
@@ -189,6 +191,7 @@
       diagnosis.links.push(resources.almond);
       if (values.symptom === 'dense') {
         diagnosis.fixes.push('Use whipped whites or a tested almond flour loaf structure if you want better loft.');
+        diagnosis.links.push(resources.collapse);
       }
     }
 
