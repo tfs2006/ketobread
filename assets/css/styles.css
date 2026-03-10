@@ -152,7 +152,20 @@ a:focus {
 }
 
 ul, ol {
-  list-style-position: inside;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+}
+
+/* Navigation and utility lists that should not have padding */
+.main-nav__list,
+.footer-nav__list,
+.breadcrumb__list,
+.pros-cons__list,
+.recipe-card__ingredients ul,
+.topic-card ul,
+.value-item__features {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* ---------- TYPOGRAPHY ---------- */
@@ -174,6 +187,13 @@ h2 {
   font-size: clamp(1.625rem, 4vw, 2.25rem);
   font-weight: 700;
   text-align: center;
+}
+
+/* Article headings are always left-aligned */
+.article__content h2,
+.article__content h3,
+.article__content h4 {
+  text-align: left;
 }
 
 h3 {
@@ -1113,7 +1133,8 @@ p {
   align-items: center;
   justify-content: center;
   color: #5D4037;
-  font-size: 3rem;
+  font-size: 4rem;
+  /* border-radius handled by .blog-card overflow: hidden */
 }
 
 .blog-card__content {
@@ -1147,6 +1168,12 @@ p {
 }
 
 /* ---------- ARTICLE CONTENT ---------- */
+
+/* Offset anchor targets so sticky header doesn't cover them */
+[id] {
+  scroll-margin-top: calc(var(--header-height) + 16px);
+}
+
 .article {
   max-width: 800px;
   margin: 0 auto;
@@ -1584,6 +1611,116 @@ p {
   height: 48px;
 }
 
+/* ---------- BLOG CARD IMAGE COLOUR CLASSES ----------
+   Named classes for blog card image bands — replaces inline style backgrounds
+   so dark-mode filter and future theming works correctly.
+   ------------------------------------------------------------------ */
+.blog-card__image--egg       { background: linear-gradient(135deg, #FFE0B2, #FFCC80); }
+.blog-card__image--rise      { background: linear-gradient(135deg, #C8E6C9, #A5D6A7); }
+.blog-card__image--lectin    { background: linear-gradient(135deg, #B3E5FC, #81D4FA); }
+.blog-card__image--almond    { background: linear-gradient(135deg, #F8D7DA, #F5B7B1); }
+.blog-card__image--coconut   { background: linear-gradient(135deg, #FFF3CD, #FAD7A0); }
+.blog-card__image--eggfree   { background: linear-gradient(135deg, #D5F5E3, #A9DFBF); }
+.blog-card__image--bagels    { background: linear-gradient(135deg, #FDEBD0, #F8C471); }
+.blog-card__image--rolls     { background: linear-gradient(135deg, #E8F8F5, #73C6B6); }
+.blog-card__image--machine   { background: linear-gradient(135deg, #EBF5FB, #85C1E9); }
+.blog-card__image--storebought { background: linear-gradient(135deg, #F9EBEA, #F1948A); }
+.blog-card__image--burgerbun { background: linear-gradient(135deg, #FDEDEC, #CD6155); }
+.blog-card__image--hotdogbun { background: linear-gradient(135deg, #FCF3CF, #F7DC6F); }
+.blog-card__image--toast     { background: linear-gradient(135deg, #F5EEF8, #BB8FCE); }
+.blog-card__image--pizza     { background: linear-gradient(135deg, #FDEBD0, #E59866); }
+.blog-card__image--flatbread { background: linear-gradient(135deg, #E8F8F5, #A2D9CE); }
+.blog-card__image--frenchtoast { background: linear-gradient(135deg, #FFF3E0, #FFCC80); }
+
+/* ---------- DEFINITION LIST STYLES (used in article FAQ sections) ---------- */
+.article__content dl {
+  margin-bottom: var(--space-md);
+}
+
+.article__content dt {
+  color: #2C1810;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xs);
+}
+
+.article__content dd {
+  color: #1A1412;
+  margin-left: var(--space-lg);
+  line-height: 1.8;
+  margin-bottom: var(--space-sm);
+}
+
+/* ---------- MOBILE READING IMPROVEMENTS ---------- */
+
+/* Prevent very long words / URLs from breaking the layout on narrow screens */
+.article__content,
+.blog-card__excerpt,
+.jump-link__text {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Improve tap target size on mobile for blog card buttons */
+@media (max-width: 640px) {
+  .blog-card__content .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Stack recipe-info chips on very small screens */
+  .recipe-card__info {
+    gap: var(--space-sm);
+  }
+
+  .recipe-info {
+    flex: 1 1 calc(50% - var(--space-sm));
+  }
+
+  /* Full-width CTA buttons in articles on mobile */
+  .cta-inline .btn,
+  .cta-block .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Reduce hero padding on mobile */
+  .hero--psychological {
+    padding: 32px 0 48px;
+  }
+
+  /* Keep urgency bar on one line with smaller text */
+  .urgency-bar {
+    font-size: 0.75rem;
+    padding: 8px 12px;
+  }
+
+  .urgency-bar__timer {
+    padding: 2px 8px;
+    font-size: 0.75rem;
+  }
+
+  /* Reduce section padding on mobile */
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .section--pain,
+  .section--solution,
+  .section--testimonials,
+  .section--final-cta,
+  .section--guarantee,
+  .section--faq {
+    padding: 48px 0;
+  }
+
+  /* Jump links — full width on mobile */
+  .jump-links {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Print styles */
 @media print {
   .site-header,
@@ -1747,45 +1884,165 @@ p {
 /* ---------- DARK MODE SUPPORT ---------- */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: #1a1a1a;
-    --color-text: #f0f0f0;
-    --color-text-light: #cccccc;
-    --color-white: #2a2a2a;
-    --color-border: #404040;
-    --color-primary-light: #2a7a4a;
+    --color-background: #1c1815;
+    --color-background-alt: #231e1a;
+    --color-text: #f0ebe6;
+    --color-text-light: #c9c0b8;
+    --color-text-muted: #9e9088;
+    --color-white: #261f1a;
+    --color-border: #3a3028;
+    --color-highlight: #2a2218;
   }
-  
+
+  body {
+    background-color: #1c1815;
+    color: #f0ebe6;
+  }
+
   .site-header {
-    background-color: #2a2a2a;
+    background-color: #1c1815;
+    border-bottom: 1px solid #3a3028;
   }
-  
+
   .logo__brand {
-    color: #f0f0f0;
+    color: #f0ebe6;
   }
-  
+
   .main-nav__link {
-    color: #f0f0f0;
+    color: #f0ebe6;
   }
-  
+
+  .main-nav--open {
+    background-color: #1c1815;
+  }
+
+  /* Hero sections */
+  .hero--psychological {
+    background: linear-gradient(135deg, #1c1815 0%, #231e1a 100%);
+  }
+
+  .hero--psychological .hero__title {
+    color: #f0ebe6;
+  }
+
+  .hero--psychological .hero__description {
+    color: #c9c0b8;
+  }
+
+  .hero__badge {
+    background-color: #2e2620;
+    color: #c9c0b8;
+  }
+
+  /* Cards */
   .card,
   .blog-card,
   .faq__item,
-  .pros-cons__column {
-    background-color: #2a2a2a;
-    border: 1px solid #404040;
+  .pros-cons__column,
+  .recipe-card,
+  .recipe-card__content,
+  .topic-card,
+  .pain-point,
+  .value-item,
+  .testimonial {
+    background-color: #261f1a;
+    border-color: #3a3028;
+    color: #f0ebe6;
   }
-  
+
+  .card__title,
+  .blog-card__title a,
+  .topic-card h3 {
+    color: #f0ebe6;
+  }
+
+  .card__text,
+  .card p,
+  .card li,
+  .blog-card__excerpt,
+  .topic-card p,
+  .topic-card li {
+    color: #c9c0b8;
+  }
+
+  /* Article */
+  .article {
+    background-color: #1c1815;
+  }
+
+  .article__content p,
+  .article__content li,
+  .article__content h2,
+  .article__content h3 {
+    color: #f0ebe6;
+  }
+
+  .article__callout {
+    background-color: #2a2218;
+  }
+
+  .cta-inline {
+    background-color: #2a2218;
+  }
+
+  /* FAQ */
+  .section--faq .faq__item summary,
+  .section--faq .faq__answer {
+    background-color: #261f1a;
+    color: #f0ebe6;
+  }
+
+  /* Section backgrounds */
+  .section--alt,
+  .section--pain,
+  .section--faq {
+    background-color: #231e1a;
+  }
+
+  /* Jump links */
+  .jump-link {
+    background-color: #261f1a;
+    border-color: #3a3028;
+  }
+
+  .jump-link__title {
+    color: #f0ebe6;
+  }
+
+  .jump-link__text {
+    color: #c9c0b8;
+  }
+
+  /* Recipe card */
+  .recipe-info {
+    background-color: #2a2218;
+    border-color: #3a3028;
+  }
+
+  .recipe-info__value {
+    color: #f0ebe6;
+  }
+
+  /* Comparison table */
   .comparison-table {
-    background-color: #2a2a2a;
+    background-color: #261f1a;
   }
-  
-  .comparison-table th {
-    background-color: #184A2C;
+
+  .comparison-table td {
+    color: #f0ebe6;
+    border-color: #3a3028;
   }
-  
-  .comparison-table th:first-child {
-    background-color: #123621;
+
+  .comparison-table tbody tr:hover {
+    background-color: #2a2218;
   }
+
+  /* Blog card inline backgrounds - override with consistent dark tone */
+  .blog-card .blog-card__image {
+    filter: brightness(0.75) saturate(0.8);
+  }
+
+  /* Urgency bar - keep as-is (intentionally high contrast) */
 }
 
 /* ---------- EXTRA SMALL DEVICES (< 375px) ---------- */
@@ -2645,8 +2902,8 @@ p {
   }
   
   .urgency-bar__timer {
-    display: block;
-    margin: 8px auto 0;
+    display: inline-block;
+    margin-left: 4px;
   }
   
   .hero--psychological {
