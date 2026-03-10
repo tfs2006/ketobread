@@ -1490,6 +1490,281 @@ p {
   background-color: #FFFFFF;
 }
 
+/* ---------- TOOL PAGE ---------- */
+.hero--tool {
+  background:
+    radial-gradient(circle at top right, rgba(212, 118, 59, 0.18), transparent 30%),
+    radial-gradient(circle at top left, rgba(184, 134, 11, 0.14), transparent 28%),
+    linear-gradient(180deg, #fffdf8 0%, #f7f0e7 100%);
+}
+
+.tool-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  margin-top: var(--space-xl);
+}
+
+.tool-shortcut {
+  background-color: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 12px 18px;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.tool-shortcut:hover,
+.tool-shortcut:focus {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.tool-layout {
+  display: grid;
+  gap: var(--space-xl);
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  align-items: start;
+}
+
+.tool-card,
+.tool-sidebar__card,
+.diagnosis-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.tool-card {
+  padding: var(--space-xl);
+}
+
+.tool-field {
+  margin-bottom: var(--space-lg);
+}
+
+.tool-field label {
+  color: var(--color-primary-dark);
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.tool-field select {
+  appearance: none;
+  background-color: #fffdf9;
+  background-image: linear-gradient(45deg, transparent 50%, var(--color-primary) 50%), linear-gradient(135deg, var(--color-primary) 50%, transparent 50%);
+  background-position: calc(100% - 22px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px);
+  background-repeat: no-repeat;
+  background-size: 6px 6px, 6px 6px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  min-height: 52px;
+  padding: 12px 48px 12px 14px;
+  width: 100%;
+}
+
+.tool-field select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(212, 168, 75, 0.2);
+  outline: none;
+}
+
+.tool-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.tool-note {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-top: var(--space-md);
+}
+
+.tool-sidebar {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.tool-sidebar__card {
+  padding: var(--space-lg);
+}
+
+.tool-sidebar__card h3 {
+  margin-bottom: var(--space-md);
+}
+
+.tool-sidebar__card--highlight {
+  background: linear-gradient(135deg, #fff8e8 0%, #fff2d6 100%);
+}
+
+.tool-sidebar__card ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.diagnosis-card {
+  padding: var(--space-xl);
+}
+
+.diagnosis-card__header {
+  align-items: center;
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.diagnosis-card__eyebrow {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+}
+
+.diagnosis-card__summary {
+  font-size: 1.08rem;
+  margin-bottom: var(--space-xl);
+}
+
+.diagnosis-confidence {
+  background-color: #fff7e3;
+  border: 1px solid #ecd8a5;
+  border-radius: var(--radius-lg);
+  min-width: 120px;
+  padding: 14px 18px;
+  text-align: center;
+}
+
+.diagnosis-confidence__label {
+  color: var(--color-text-muted);
+  display: block;
+  font-size: 0.82rem;
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+}
+
+.diagnosis-grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.diagnosis-panel {
+  background-color: #fffdfa;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+.diagnosis-panel--accent {
+  background: linear-gradient(135deg, #fff9e8 0%, #fff3da 100%);
+}
+
+.diagnosis-panel--links {
+  margin-top: var(--space-lg);
+}
+
+.diagnosis-panel h4 {
+  margin-bottom: var(--space-md);
+}
+
+.diagnosis-panel ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.diagnosis-panel__meta {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  margin-top: var(--space-md);
+}
+
+.diagnosis-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.diagnosis-link {
+  background-color: var(--color-background-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-primary);
+  display: inline-flex;
+  font-weight: 700;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+
+.diagnosis-link:hover {
+  text-decoration: none;
+}
+
+.diagnosis-share {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.diagnosis-share__status {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.tool-patterns {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+@media (max-width: 900px) {
+  .tool-layout,
+  .diagnosis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .tool-card,
+  .diagnosis-card {
+    padding: var(--space-lg);
+  }
+
+  .tool-actions,
+  .diagnosis-card__header,
+  .diagnosis-share {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .tool-actions .btn,
+  .diagnosis-share .btn {
+    width: 100%;
+  }
+
+  .tool-shortcuts {
+    justify-content: flex-start;
+  }
+}
+
 .recipe-card__info {
   display: flex;
   flex-wrap: wrap;
