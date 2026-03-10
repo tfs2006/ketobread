@@ -1700,20 +1700,30 @@ p {
 
 /* ---------- DEFINITION LIST STYLES (used in article FAQ sections) ---------- */
 .article__content dl {
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-xl);
+  border-top: 2px solid var(--color-border);
+  padding-top: var(--space-md);
 }
 
 .article__content dt {
   color: #2C1810;
+  font-family: var(--font-heading);
+  font-size: 1.0625rem;
+  font-weight: 700;
   margin-top: var(--space-lg);
   margin-bottom: var(--space-xs);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .article__content dd {
-  color: #1A1412;
-  margin-left: var(--space-lg);
+  color: #3D352F;
+  margin-left: 0;
+  padding-left: var(--space-md);
+  border-left: 3px solid var(--color-accent-light);
   line-height: 1.8;
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+  margin-top: var(--space-xs);
 }
 
 /* ---------- MOBILE READING IMPROVEMENTS ---------- */
@@ -2052,8 +2062,23 @@ p {
   .article__content p,
   .article__content li,
   .article__content h2,
-  .article__content h3 {
+  .article__content h3,
+  .article__content dt,
+  .article__content dd {
     color: #f0ebe6;
+  }
+
+  .article__content dt {
+    border-bottom-color: #3a3028;
+  }
+
+  .article__content dl {
+    border-top-color: #3a3028;
+  }
+
+  .article__content dd {
+    color: #c9c0b8;
+    border-left-color: #C9A962;
   }
 
   .article__callout {
